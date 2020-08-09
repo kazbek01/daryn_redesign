@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
-    <link href="css/lg-transitions.min.css" rel="stylesheet" type="text/css">
-    <link href="css/lightgallery.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -530,164 +529,91 @@
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-7">
-                   <div class="profile-awards gallery-awards">
-                       <div class="award-item">
-                            <div class="award-item-img" data-src="img/main/award.png">
-                                <img src="img/main/award.png" alt="">
+                    <div class="profile-edit whiteBlog">
+                        <div class="profile-edit-head">
+                            <h1 class="subtitle-blue">Профильді өзгерту</h1>
+                        </div>
+                        <div class="profile-edit-body">
+                            <div class="profile-edit-img">
+                                <img src="img/main/ava-md.png" alt="">
+                                <label class="edit-img">
+                                    <span>Фотосуретті өзгерту</span>
+                                    <input type="file">
+                                </label>
                             </div>
-                            <div class="btn-box">
-                                <a href="#" class="btn-blue-gradient">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>Жүктеу</span>
-                                    <em>PDF</em>
-                                </a>
-                                <a href="#" class="btn-blue-light">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <defs>
-                                            <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#5986FB"/>
-                                                <stop offset="1" stop-color="#2D4EF5"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <span>Басып шығару</span>
-                                </a>
+                            <div class="profile-edit-caption">
+                                <div class="form-half">
+                                    <label class="form-label">
+                                        <span>Аты</span>
+                                        <input type="text">
+                                    </label>
+                                    <label class="form-label">
+                                        <span>Жөні</span>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <div class="form-half">
+                                    <label class="form-label select-label">
+                                        <span>Оқушы</span>
+                                        <select name="#">
+                                            <option value="Оқушымын">Оқушымын</option>
+                                            <option value="Оқушымын">Оқушымын 1</option>
+                                            <option value="Оқушымын">Оқушымын 2</option>
+                                        </select>
+                                        <i class="icon i-down-grey"></i>
+                                    </label>
+                                    <label class="form-label label-selectpicker">
+                                        <em class="form-title">Облыс</em>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Алматы қаласы</option>
+                                            <option data-tokens="mustard">Астана қаласы</option>
+                                            <option data-tokens="frosting">Талдыкорган қаласы</option>
+                                        </select>
+                                        <i class="icon i-down-grey"></i>
+                                    </label>
+                                </div>
+                                <div class="form-half">
+                                    <label class="form-label label-selectpicker">
+                                        <em class="form-title">Мектеп</em>
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">"№15 гимназия" коммуналд...</option>
+                                            <option data-tokens="mustard">"№15 гимназия" коммуналд...</option>
+                                            <option data-tokens="frosting">"№15 гимназия" коммуналд...</option>
+                                        </select>
+                                        <i class="icon i-down-grey"></i>
+                                    </label>
+                                    <label class="form-label select-label">
+                                        <span>Сынып</span>
+                                        <select name="#">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <i class="icon i-down-grey"></i>
+                                    </label>
+                                </div>
+                                <div class="form-half">
+                                    <label class="form-label">
+                                        <span>E-mail</span>
+                                        <input type="text">
+                                    </label>
+                                    <label class="form-label">
+                                        <span>Телефон нөмер</span>
+                                        <input type="text" class="phone-mask">
+                                    </label>
+                                </div>
+                                <div class="btn-box tar">
+                                    <button class="btn-plain btn-blue-gradient">
+                                        <span>Сақтау</span>
+                                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 6L6 11L16 1" stroke="white" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                       <div class="award-item">
-                           <div class="award-item-img" data-src="img/main/award.png">
-                               <img src="img/main/award.png" alt="">
-                           </div>
-                           <div class="btn-box">
-                               <a href="#" class="btn-blue-gradient">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                   </svg>
-                                   <span>Жүктеу</span>
-                                   <em>PDF</em>
-                               </a>
-                               <a href="#" class="btn-blue-light">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <defs>
-                                           <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                               <stop stop-color="#5986FB"/>
-                                               <stop offset="1" stop-color="#2D4EF5"/>
-                                           </linearGradient>
-                                       </defs>
-                                   </svg>
-                                   <span>Басып шығару</span>
-                               </a>
-                           </div>
-                       </div>
-                       <div class="award-item">
-                           <div class="award-item-img" data-src="img/main/award.png">
-                               <img src="img/main/award.png" alt="">
-                           </div>
-                           <div class="btn-box">
-                               <a href="#" class="btn-blue-gradient">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                   </svg>
-                                   <span>Жүктеу</span>
-                                   <em>PDF</em>
-                               </a>
-                               <a href="#" class="btn-blue-light">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <defs>
-                                           <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                               <stop stop-color="#5986FB"/>
-                                               <stop offset="1" stop-color="#2D4EF5"/>
-                                           </linearGradient>
-                                       </defs>
-                                   </svg>
-                                   <span>Басып шығару</span>
-                               </a>
-                           </div>
-                       </div>
-                       <div class="award-item">
-                           <div class="award-item-img" data-src="img/main/award.png">
-                               <img src="img/main/award.png" alt="">
-                           </div>
-                           <div class="btn-box">
-                               <a href="#" class="btn-blue-gradient">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                   </svg>
-                                   <span>Жүктеу</span>
-                                   <em>PDF</em>
-                               </a>
-                               <a href="#" class="btn-blue-light">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <defs>
-                                           <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                               <stop stop-color="#5986FB"/>
-                                               <stop offset="1" stop-color="#2D4EF5"/>
-                                           </linearGradient>
-                                       </defs>
-                                   </svg>
-                                   <span>Басып шығару</span>
-                               </a>
-                           </div>
-                       </div>
-                       <div class="award-item">
-                           <div class="award-item-img" data-src="img/main/award.png">
-                               <img src="img/main/award.png" alt="">
-                           </div>
-                           <div class="btn-box">
-                               <a href="#" class="btn-blue-gradient">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                   </svg>
-                                   <span>Жүктеу</span>
-                                   <em>PDF</em>
-                               </a>
-                               <a href="#" class="btn-blue-light">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <defs>
-                                           <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                               <stop stop-color="#5986FB"/>
-                                               <stop offset="1" stop-color="#2D4EF5"/>
-                                           </linearGradient>
-                                       </defs>
-                                   </svg>
-                                   <span>Басып шығару</span>
-                               </a>
-                           </div>
-                       </div>
-                       <div class="award-item">
-                           <div class="award-item-img" data-src="img/main/award.png">
-                               <img src="img/main/award.png" alt="">
-                           </div>
-                           <div class="btn-box">
-                               <a href="#" class="btn-blue-gradient">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M10 15V1M19 15C19 17.209 17.209 19 15 19H5C2.791 19 1 17.209 1 15M15 10L9.999 15.001L4.999 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                   </svg>
-                                   <span>Жүктеу</span>
-                                   <em>PDF</em>
-                               </a>
-                               <a href="#" class="btn-blue-light">
-                                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <defs>
-                                           <linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
-                                               <stop stop-color="#5986FB"/>
-                                               <stop offset="1" stop-color="#2D4EF5"/>
-                                           </linearGradient>
-                                       </defs>
-                                   </svg>
-                                   <span>Басып шығару</span>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -744,12 +670,32 @@
 </footer>
 <script src="js/libs.min.js"></script>
 <script src='js/jquery.easy-autocomplete.min.js'></script>
-<script src="js/lightgallery.min.js"></script>
+<script src='js/bootstrap-select.min.js'></script>
 <script type="text/javascript">
-    $('.gallery-awards').lightGallery({
-        closable:true,
-        selector: '.award-item-img'
+    $('.form-label input,.form-label select').focus(function () {
+        $(this).closest('.form-label').addClass('form-label-focus');
     });
+    $('.form-label input').blur(function () {
+        $(this).closest('.form-label').removeClass('form-label-focus');
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
+    $('.form-label select').blur(function () {
+        $(this).closest('.form-label').removeClass('form-label-focus');
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
+    $('.label-selectpicker').click(function () {
+        $(this).addClass('form-label-done');
+    });
+
+    $('.selectpicker').selectpicker();
 </script>
 <script src="js/common.js"></script>
 </body>

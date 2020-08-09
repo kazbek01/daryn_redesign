@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -254,52 +255,40 @@
         <div class="login-box registr-box">
             <div class="registrForm">
                 <h1>Соңғы қадам</h1>
-                <label class="form-label datalist-label">
-                    <span>Аудан </span>
-                    <input list="browsers" name="browser" class="datalist-field">
-                    <datalist id="browsers">
-                        <option value="Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
+                <label class="form-label label-selectpicker">
+                    <em class="form-title">Облыс </em>
+                    <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">Алматы қаласы</option>
+                        <option data-tokens="mustard">Астана қаласы</option>
+                        <option data-tokens="frosting">Талдыкорган қаласы</option>
+                    </select>
                     <i class="icon i-down-grey"></i>
                 </label>
-                <label class="form-label datalist-label">
-                    <span>Қала</span>
-                    <input list="city" name="browser" class="datalist-field">
-                    <datalist id="city">
-                        <option value="Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
+                <label class="form-label label-selectpicker">
+                    <em class="form-title">Қала </em>
+                    <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">Алматы қаласы</option>
+                        <option data-tokens="mustard">Астана қаласы</option>
+                        <option data-tokens="frosting">Талдыкорган қаласы</option>
+                    </select>
                     <i class="icon i-down-grey"></i>
                 </label>
-                <label class="form-label datalist-label">
-                    <span>Мектеп</span>
-                    <input list="school" name="browser" class="datalist-field">
-                    <datalist id="school">
-                        <option value="Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
+                <label class="form-label label-selectpicker">
+                    <em class="form-title">Мектеп</em>
+                    <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">"№15 гимназия" коммуналд...</option>
+                        <option data-tokens="mustard">"№15 гимназия" коммуналд...</option>
+                        <option data-tokens="frosting">"№15 гимназия" коммуналд...</option>
+                    </select>
                     <i class="icon i-down-grey"></i>
                 </label>
-                <label class="form-label datalist-label">
+                <label class="form-label select-label">
                     <span>Сынып</span>
-                    <input list="level" name="browser" class="datalist-field">
-                    <datalist id="level">
-                        <option value="Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
+                    <select name="#">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                     <i class="icon i-down-grey"></i>
                 </label>
                 <div class="btns-half">
@@ -367,8 +356,9 @@
 </footer>
 <script src="js/libs.min.js"></script>
 <script src='js/jquery.easy-autocomplete.min.js'></script>
+<script src='js/bootstrap-select.min.js'></script>
 <script type="text/javascript">
-    $('.form-label input').focus(function () {
+    $('.form-label input,.form-label select').focus(function () {
         $(this).closest('.form-label').addClass('form-label-focus');
     });
     $('.form-label input').blur(function () {
@@ -379,7 +369,19 @@
             $(this).closest('.form-label').removeClass('form-label-done');
         }
     });
+    $('.form-label select').blur(function () {
+        $(this).closest('.form-label').removeClass('form-label-focus');
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
+    $('.label-selectpicker').click(function () {
+        $(this).addClass('form-label-done');
+    });
 
+    $('.selectpicker').selectpicker();
 </script>
 <script src="js/common.js"></script>
 </body>
