@@ -1,1 +1,9 @@
-<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 0-2-2m2 9v1m0-5v1m0 7a2 2 0 0 1-2 2M6 1a2 2 0 0 0-2 2m9-2h1M9 1h1M4 9.5h7m-7 6h7m-7-3h7m1 6.5H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#5986FB"/><stop offset="1" stop-color="#2D4EF5"/></linearGradient></defs></svg>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 3C19 1.895 18.105 1 17 1M19 10V11M19 6V7M19 14C19 15.105 18.105 16 17 16M6 1C4.895 1 4 1.895 4 3M13 1H14M9 1H10M4 9.5H11M4 15.5H11M4 12.5H11M12 19H3C1.895 19 1 18.105 1 17V8C1 6.895 1.895 6 3 6H12C13.105 6 14 6.895 14 8V17C14 18.105 13.105 19 12 19Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5986FB"/>
+<stop offset="1" stop-color="#2D4EF5"/>
+</linearGradient>
+</defs>
+</svg>

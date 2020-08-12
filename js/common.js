@@ -13,10 +13,13 @@ $(document).ready(function () {
         $('.call-menu').removeClass('open');
         $('.modal-box').removeClass('showed');
         $(this).removeClass('overlay-showed');
+        $(".searchCover").removeClass('search-active');
+        $('.modalBox').removeClass('showed');
     })
     $('.close-modal').click(function () {
         $('.overlay').removeClass('overlay-showed');
         $('.modal-box').removeClass('showed');
+        $('.modalBox').removeClass('showed');
     })
 
     // var wow = new WOW({
@@ -66,7 +69,15 @@ $(document).ready(function () {
     $(".search-complete").easyAutocomplete(options);
 
     $('.clear-search').click(function () {
-        $(".search-complete").val('');
+        var $input = $(".search-complete").val();
+        console.log($input.length);
+        if($input.length > 1){
+            $(".search-complete").val('');
+        }else{
+            $(".searchCover").removeClass('search-active');
+            $(".overlay").removeClass('overlay-showed');
+        }
+
     })
 
     $('.btn-search').click(function (e) {

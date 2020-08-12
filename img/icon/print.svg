@@ -1,1 +1,9 @@
-<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 6V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4M5 15H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M5 9h1m-1 2.8h10V18a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-6.2z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#5986FB"/><stop offset="1" stop-color="#2D4EF5"/></linearGradient></defs></svg>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 6V2C5 1.448 5.448 1 6 1H14C14.552 1 15 1.448 15 2V6M5 15H3C1.895 15 1 14.105 1 13V8C1 6.895 1.895 6 3 6H17C18.105 6 19 6.895 19 8V13C19 14.105 18.105 15 17 15H15M5 9H6M5 11.8H15V18C15 18.552 14.552 19 14 19H6C5.448 19 5 18.552 5 18V11.8Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear" x1="1" y1="1" x2="1" y2="19" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5986FB"/>
+<stop offset="1" stop-color="#2D4EF5"/>
+</linearGradient>
+</defs>
+</svg>
