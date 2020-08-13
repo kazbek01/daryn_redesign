@@ -41,7 +41,9 @@
                     <div class="searchCover-box">
                         <div class="searchCover">
                             <button class="btn-plain btn-search">
-                                <img src="img/icon/search.svg" alt="">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 21L16.3 16.3M16.3054 3.626C19.8068 7.12733 19.8068 12.8041 16.3054 16.3054C12.8041 19.8068 7.12733 19.8068 3.626 16.3054C0.124668 12.8041 0.124668 7.12733 3.626 3.626C7.12733 0.124668 12.8041 0.124668 16.3054 3.626Z" stroke="#162F71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </button>
                             <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз" class="search-complete">
                             <div class="search-control">
@@ -58,7 +60,6 @@
                 <button class="btn-plain basket">
                     <img src="img/icon/bag.svg" alt="">
                 </button>
-
                 <ul class="login-list">
                     <li>
                         <a href="login.html">
@@ -81,7 +82,21 @@
                         </a>
                     </li>
                 </ul>
+                <div class="dropdown-language">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button"
+                                id="dropdownLang" data-toggle="dropdown">
+                            <span>KZ</span>
+                            <i class="icon i-down-grey"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownLang">
+                            <a class="dropdown-item" href="#">RU</a>
+                            <a class="dropdown-item" href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </header>
@@ -274,9 +289,9 @@
     </div>
     <img src="img/main/bg-white.png" alt="" class="main-bg">
     <div class="main-animated" id="threeBox"></div>
-    <div class="to-down">
+    <a href="#advantage" class="to-down">
         <img src="img/icon/down.svg" alt="">
-    </div>
+    </a>
 </section>
 <section class="faq-main grey-bg">
     <div class="sl-faq">
@@ -342,7 +357,7 @@
         </a>
     </div>
 </section>
-<section class="advantage">
+<section class="advantage" id="advantage">
     <div class="container">
         <div class="row row-eq-height">
             <div class="col-lg-4 col-md-6 col-height">
@@ -781,6 +796,16 @@
         ]
     });
 
+
+    $('.to-down').on('click', function (e) {
+        e.preventDefault();
+        var selector = $(this).attr('href'); // About stroka
+        var h = $(selector); // Dom element zagalovka
+
+        $('html, body').animate({
+            scrollTop: h.offset().top -70
+        }, 700);
+    })
 </script>
 <script src="js/common.js"></script>
 </body>

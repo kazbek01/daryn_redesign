@@ -431,17 +431,10 @@
             </div>
             <div class="col-lg-8">
                 <div class="lesson-content whiteBlog">
-                    <div class="content-item">
+                    <div class="content-item content-item-passed">
                         <div class="content-item-head">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
-                                 class="content-play" fill="#fff">
-                                <path d="M25 13C25 19.628 19.628 25 13 25C6.372 25 1 19.628 1 13C1 6.372 6.372 1 13 1C19.628 1 25 6.372 25 13Z"
-                                      stroke="#0668CB" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <path class="contentPlay"
-                                      d="M11.588 9.07733L16.764 12.1387C17.4187 12.5253 17.4187 13.4733 16.764 13.86L11.588 16.9213C10.9213 17.316 10.0787 16.8347 10.0787 16.06V9.93867C10.0787 9.164 10.9213 8.68267 11.588 9.07733Z"
-                                      stroke="#0668CB" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6673 10.6678L11.8339 16.5012L8.33271 13M13 1C19.6268 1 25 6.37318 25 13C25 19.6268 19.6268 25 13 25C6.37318 25 1 19.6268 1 13C1 6.37318 6.37318 1 13 1Z" stroke="#06710A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <h2>1-тарау. Квадрат түбір және иррационал өрнек</h2>
                             <span>0/8</span>
@@ -454,7 +447,7 @@
                         <div class="content-item-body">
                             <a href="lesson-start.html">
                                 <div class="content-inside-cover">
-                                    <div class="content-inside">
+                                    <div class="content-inside content-inside-passed">
                                         <div class="content-inside-num">
                                             <span>1</span>
                                             <i class="icon i-play-blue"></i>
@@ -466,7 +459,7 @@
                             </a>
                             <a href="lesson-start.html">
                                 <div class="content-inside-cover">
-                                    <div class="content-inside">
+                                    <div class="content-inside content-inside-passed">
                                         <div class="content-inside-num">
                                             <span>2</span>
                                             <i class="icon i-play-blue"></i>
@@ -477,7 +470,7 @@
                             </a>
                             <a href="lesson-start.html">
                                 <div class="content-inside-cover">
-                                    <div class="content-inside">
+                                    <div class="content-inside content-inside-passed">
                                         <div class="content-inside-num">
                                             <span>3</span>
                                             <i class="icon i-play-blue"></i>
@@ -1079,6 +1072,10 @@
         $('.content-item .answer').not(answer).slideUp(400);
         answer.slideToggle(400);
     });
+
+    $('.page-up').click(function () {
+        $("html, body").animate({scrollTop: 0}, 800);
+    })
 </script>
 <script src="js/common.js"></script>
 </body>

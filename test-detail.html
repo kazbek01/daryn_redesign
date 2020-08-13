@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body>
-<header class="header-white">
+<body class="grey-bg">
+<header class="header-white header-profile">
     <div class="container">
         <div class="header">
             <button class="btn-plain call-menu">
@@ -40,7 +40,8 @@
                             <button class="btn-plain btn-search">
                                 <img src="img/icon/search.svg" alt="">
                             </button>
-                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз" class="search-complete">
+                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз"
+                                   class="search-complete">
                             <div class="search-control">
                                 <button class="btn-plain call-search">
                                     <img src="img/icon/call-search.svg" alt="">
@@ -55,29 +56,21 @@
                 <button class="btn-plain basket">
                     <img src="img/icon/bag.svg" alt="">
                 </button>
-
-                <ul class="login-list">
-                    <li>
-                        <a href="login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M5 0C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0H5ZM8.70711 5.29289C8.31658 4.90237 7.68342 4.90237 7.29289 5.29289C6.90237 5.68342 6.90237 6.31658 7.29289 6.70711L9.58579 9L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L11.7071 9.70711C12.0976 9.31658 12.0976 8.68342 11.7071 8.29289L8.70711 5.29289Z"
-                                      fill="#4E6BB9"/>
-                            </svg>
-                            <span>Кiру</span>
-                        </a>
-                    </li>
-                    <li class="none-xs">
-                        <a href="login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M5 0C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0H5ZM10 6C10 5.44772 9.55228 5 9 5C8.44772 5 8 5.44772 8 6V8H6C5.44772 8 5 8.44772 5 9C5 9.55228 5.44772 10 6 10H8V12C8 12.5523 8.44772 13 9 13C9.55228 13 10 12.5523 10 12V10H12C12.5523 10 13 9.55228 13 9C13 8.44772 12.5523 8 12 8H10V6Z"
-                                      fill="#4E6BB9"/>
-                            </svg>
-                            <span>Тiркелу</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button"
+                            id="dropdownProfile" data-toggle="dropdown">
+                        <div class="prof-item">
+                            <img src="img/main/avatar.png" alt="">
+                            <span>Профиль</span>
+                            <i class="icon i-down-grey"></i>
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                    </div>
+                </div>
                 <div class="dropdown-language">
                     <div class="dropdown">
                         <button class="dropdown-toggle" type="button"
@@ -91,7 +84,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -262,100 +254,370 @@
         <img src="img/logo/copyright.svg" alt="">
     </a>
 </div>
-<section class="login">
+<section class="testInside">
     <div class="container">
-        <div class="login-box">
-            <ul class="nav nav-tabs login-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab-login">Kipy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tab-registr">Тipкелy</a>
-                </li>
-
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade" id="tab-login">
-                    <label class="form-label">
-                        <span>E-mail </span>
-                        <input type="text">
-                    </label>
-                    <!--class dlya oshibok >  form-label-error-->
-                    <label class="form-label field-password">
-                        <span>Құпия сөз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-hide">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <a href="#" class="forget-link">Парольді ұмытып қалдыңыз ба?</a>
-                    <div class="btns-half">
-                        <a href="#" class="btn-plain btn-blue-light">Тipкелy</a>
-                        <button class="btn-plain btn-blue-gradient">Kipy</button>
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <a href="#" class="back-link-grey">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L2 8L9 15" stroke="#848E9F" stroke-width="1.5"/>
+                    </svg>
+                    <span>Артқа</span>
+                </a>
+                <!--class for red theme -> 'leave-time-red'-->
+                <div class="leave-time">
+                    <div class="leave-time-head">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6076 6.50356C12.7608 6.97489 12.8456 7.47733 12.8456 8M9.49644 3.39244C9.02511 3.23922 8.52267 3.15367 8 3.15367C5.32367 3.15367 3.15367 5.32367 3.15367 8M8.82444 7.17556L11.43 4.57M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM9.16667 8C9.16667 8.64433 8.64433 9.16667 8 9.16667C7.35567 9.16667 6.83333 8.64433 6.83333 8C6.83333 7.35567 7.35567 6.83333 8 6.83333C8.64433 6.83333 9.16667 7.35567 9.16667 8Z"
+                                  stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Біту уақыты</h3>
                     </div>
+                    <h2>01:59:34</h2>
                 </div>
-                <div class="tab-pane fade show active" id="tab-registr">
-                    <div class="form-half">
-                        <label class="form-label">
-                            <span>Аты</span>
-                            <input type="text">
-                        </label>
-                        <label class="form-label">
-                            <span>Жөні</span>
-                            <input type="text">
-                        </label>
+                <div class="test-progress">
+                    <h3>2 <span>/ 75</span></h3>
+                    <div class="progress-cover">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 50%;"></div>
+                        </div>
                     </div>
-                    <label class="form-label">
-                        <span>E-mail</span>
-                        <input type="text">
-                    </label>
-                    <label class="form-label">
-                        <span>Телефон</span>
-                        <input type="text">
-                    </label>
-                    <label class="form-label field-password">
-                        <span>Құпия сөз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-hide">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <label class="form-label field-password">
-                        <span>Құпия сөзді қайталаңыз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-show">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <div class="student-type">
-                        <button class="btn-plain btn-student btn-student-active">
-                            <i class="icon check-white"></i>
-                            <span>Мен оқушымын</span>
-                            <input type="radio" name="student-type">
-                        </button>
-                        <button class="btn-plain btn-student">
-                            <i class="icon check-white"></i>
-                            <span>Мен оқушымын</span>
-                            <input type="radio" name="student-type">
-                        </button>
+
+                </div>
+
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="testDetail">
+                    <div class="testDetail-head">
+                        <h1>БИЛ 2-кезең</h1>
+                        <div class="testDetail-head-base">
+                            <ul class="testInfo">
+                                <li class="active">
+                                    1–cұрақ.
+                                </li>
+                                <li>Математика</li>
+                            </ul>
+                            <button class="btn-plain call-teacher">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.375 8.347L17.17 11.401C17.906 11.994 19 11.47 19 10.525V3.475C19 2.53 17.906 2.006 17.17 2.599L13.375 5.653M11.125 13H3.25C2.007 13 1 11.993 1 10.75V3.25C1 2.007 2.007 1 3.25 1H11.125C12.368 1 13.375 2.007 13.375 3.25V10.75C13.375 11.993 12.368 13 11.125 13Z"
+                                          stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <span>TEACHER</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="btns-half">
-                        <a href="registr-last-step.html" class="btn-plain btn-blue-light">Kipy</a>
-                        <button class="btn-plain btn-blue-gradient">Тipкелy</button>
+                    <div class="testDetail-body">
+                        <h4>1. Көп нүктенің орнына тиісті санды қойыңыз 0, 7, 26, 63, ..., 215, 342</h4>
+                        <div class="answers">
+                            <label class="radio-container">
+                                Ом заңы
+                                <input type="radio" name="answer">
+                                <span class="checkmark">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 9L13 1" stroke="#D9D9D9" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                            </label>
+                            <label class="radio-container">
+                                Стефан-Больцман заңы
+                                <input type="radio" name="answer">
+                                <span class="checkmark">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 9L13 1" stroke="#D9D9D9" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                            </label>
+                            <label class="radio-container">
+                                Кирхгоф заңы
+                                <input type="radio" name="answer">
+                                <span class="checkmark">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 9L13 1" stroke="#D9D9D9" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                            </label>
+                            <label class="radio-container">
+                                Малюс заңы
+                                <input type="radio" name="answer">
+                                <span class="checkmark">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 9L13 1" stroke="#D9D9D9" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="btn-box tar">
+                            <button class="btn-plain btn-blue-gradient">
+                                <span>Алға</span>
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="registr-notice">
-                        <p>
-                            Тіркелу батырмасын басу арқылы сіз <a href="#">қолданушы келісімшартымен</a> келісесіз
-                        </p>
+                    <div class="testDetail-base">
+                        <button class="btn-plain btn-toggle">
+                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="#848E9F" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+                        <ul class="testNumber-list">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">6</a>
+                            </li>
+                            <li>
+                                <a href="#">7</a>
+                            </li>
+                            <li>
+                                <a href="#">8</a>
+                            </li>
+                            <li>
+                                <a href="#">9</a>
+                            </li>
+                            <li>
+                                <a href="#">10</a>
+                            </li>
+                        </ul>
+                        <div class="slide-block">
+                            <ul class="testNumber-list">
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <a href="#">7</a>
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">10</a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <a href="#">7</a>
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">10</a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <a href="#">7</a>
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">9</a>
+                                </li>
+                                <li>
+                                    <a href="#">10</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-login">
-        <img src="img/main/bg-login.svg" alt="">
-    </div>
+
 </section>
+<div class="teacher-modal modal-box">
+    <div class="modal-box-head">
+        <h4>Мұғалімнен көмек сұрау</h4>
+        <button class="btn-plain close-modal">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 19L19 1M1 1L19 19" stroke="#848E9F" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <p>Онлайн видео қоңырау арқылы мұғалімнен тақырып бойынша көмек ала аласыз</p>
+    <div class="teacher-type-cover">
+        <div class="teacher-type">
+            <div class="teacher-type-img">
+                <img src="img/icon/teacher-1.svg" alt="">
+            </div>
+            <div class="teacher-type-caption">
+                <h5>Бастаушы</h5>
+                <span>1 мин.≈ 60 теңге</span>
+            </div>
+            <input type="radio" name="teach-type">
+        </div>
+        <div class="teacher-type">
+            <div class="teacher-type-img">
+                <img src="img/icon/teacher-2.svg" alt="">
+            </div>
+            <div class="teacher-type-caption">
+                <h5>Үздік</h5>
+                <span>1 мин.≈ 66 теңге</span>
+            </div>
+            <input type="radio" name="teach-type">
+        </div>
+        <div class="teacher-type">
+            <div class="teacher-type-img">
+                <img src="img/icon/teacher-3.svg" alt="">
+            </div>
+            <div class="teacher-type-caption">
+                <h5>Кемеңгер</h5>
+                <span>1 мин.≈ 72 теңге</span>
+            </div>
+            <input type="radio" name="teach-type">
+        </div>
+    </div>
+    <div class="payment-cover">
+        <h3>Төлем әдісін таңдаңыз</h3>
+        <div class="dropdown">
+            <button class="btn-plain call-payment dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2"
+                    aria-expanded="false">
+                <span>Кошелек <em>— 1900₸</em> </span>
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L13 1" stroke="#848E9F" stroke-width="1.5"/>
+                </svg>
+            </button>
+            <div class="dropdown-menu payment-dropdown" aria-labelledby="dropdownMenu2">
+                <form action="#">
+                    <div class="payment-dropdown-item">
+                        <label class="radio-container">
+                            Банк картасымен
+                            <input type="radio" name="radio" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-container">
+                            Кошелек <em>— 1900₸</em>
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-container">
+
+                            QIWI терминалымен төлеу
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="payment-switch-cover">
+                            <div class="switch-cover">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Бонус қолдану — <em>3038 d.</em></p>
+                            </div>
+                            <div class="switch-cover">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <p>Промокодты қолдану</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div class="payment-cover-base">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.999 8C11.861 8 11.749 8.112 11.75 8.25C11.75 8.388 11.862 8.5 12 8.5C12.138 8.5 12.25 8.388 12.25 8.25C12.25 8.112 12.138 8 11.999 8Z"
+                      stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 21C7.029 21 3 16.971 3 12C3 7.029 7.029 3 12 3C16.971 3 21 7.029 21 12C21 16.971 16.971 21 12 21Z"
+                      stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12V17" stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Мұғалімнің дәрежесі туралы</p>
+        </div>
+    </a>
+    <button class="btn-plain call-teach btn-blue-gradient" disabled>
+        <span>Мұғалімге хабарласу</span>
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L8 8L1 15" stroke="white" stroke-width="1.5"/>
+        </svg>
+    </button>
+</div>
 <div class="overlay"></div>
 <footer>
     <div class="container">
@@ -408,33 +670,14 @@
 <script src="js/libs.min.js"></script>
 <script src='js/jquery.easy-autocomplete.min.js'></script>
 <script type="text/javascript">
-    $('.form-label input').focus(function () {
-        $(this).closest('.form-label').addClass('form-label-focus');
-    });
-    $('.form-label input').blur(function() {
-        $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').addClass('form-label-done');
-        if( $(this).val().length === 0 ) {
-            $(this).closest('.form-label').removeClass('form-label-focus');
-            $(this).closest('.form-label').removeClass('form-label-done');
-        }
-    });
-
-    $('.pass-hide').click(function () {
-        $(this).toggleClass('pass-show');
-        var input = $($(this).closest('.form-label').find('.password-input'));
-        if (input.attr("type") == "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
+    $('.call-teacher').click(function () {
+        $('.teacher-modal').addClass('showed');
+        $('.overlay').addClass('overlay-showed');
     })
 
-
-    $('.btn-student').click(function () {
-        $('.btn-student').removeClass('btn-student-active');
-        $(this).addClass('btn-student-active');
-
+    $('.btn-toggle').click(function () {
+        $(this).toggleClass('btn-toggle-active')
+        $('.slide-block').slideToggle(400);
     })
 </script>
 <script src="js/common.js"></script>

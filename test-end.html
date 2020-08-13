@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body>
-<header class="header-white">
+<body class="grey-bg">
+<header class="header-white header-profile">
     <div class="container">
         <div class="header">
             <button class="btn-plain call-menu">
@@ -40,7 +40,8 @@
                             <button class="btn-plain btn-search">
                                 <img src="img/icon/search.svg" alt="">
                             </button>
-                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз" class="search-complete">
+                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз"
+                                   class="search-complete">
                             <div class="search-control">
                                 <button class="btn-plain call-search">
                                     <img src="img/icon/call-search.svg" alt="">
@@ -55,29 +56,21 @@
                 <button class="btn-plain basket">
                     <img src="img/icon/bag.svg" alt="">
                 </button>
-
-                <ul class="login-list">
-                    <li>
-                        <a href="login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M5 0C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0H5ZM8.70711 5.29289C8.31658 4.90237 7.68342 4.90237 7.29289 5.29289C6.90237 5.68342 6.90237 6.31658 7.29289 6.70711L9.58579 9L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L11.7071 9.70711C12.0976 9.31658 12.0976 8.68342 11.7071 8.29289L8.70711 5.29289Z"
-                                      fill="#4E6BB9"/>
-                            </svg>
-                            <span>Кiру</span>
-                        </a>
-                    </li>
-                    <li class="none-xs">
-                        <a href="login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M5 0C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0H5ZM10 6C10 5.44772 9.55228 5 9 5C8.44772 5 8 5.44772 8 6V8H6C5.44772 8 5 8.44772 5 9C5 9.55228 5.44772 10 6 10H8V12C8 12.5523 8.44772 13 9 13C9.55228 13 10 12.5523 10 12V10H12C12.5523 10 13 9.55228 13 9C13 8.44772 12.5523 8 12 8H10V6Z"
-                                      fill="#4E6BB9"/>
-                            </svg>
-                            <span>Тiркелу</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button"
+                            id="dropdownProfile" data-toggle="dropdown">
+                        <div class="prof-item">
+                            <img src="img/main/avatar.png" alt="">
+                            <span>Профиль</span>
+                            <i class="icon i-down-grey"></i>
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                    </div>
+                </div>
                 <div class="dropdown-language">
                     <div class="dropdown">
                         <button class="dropdown-toggle" type="button"
@@ -91,7 +84,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -262,99 +254,42 @@
         <img src="img/logo/copyright.svg" alt="">
     </a>
 </div>
-<section class="login">
+<section class="testEnd">
     <div class="container">
-        <div class="login-box">
-            <ul class="nav nav-tabs login-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tab-login">Kipy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tab-registr">Тipкелy</a>
-                </li>
-
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade" id="tab-login">
-                    <label class="form-label">
-                        <span>E-mail </span>
-                        <input type="text">
-                    </label>
-                    <!--class dlya oshibok >  form-label-error-->
-                    <label class="form-label field-password">
-                        <span>Құпия сөз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-hide">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <a href="#" class="forget-link">Парольді ұмытып қалдыңыз ба?</a>
-                    <div class="btns-half">
-                        <a href="#" class="btn-plain btn-blue-light">Тipкелy</a>
-                        <button class="btn-plain btn-blue-gradient">Kipy</button>
+        <div class="testEnd-cover">
+            <div class="row">
+                <img src="img/main/man-test.svg" alt="" class="testEnd-img">
+                <div class="col-xl-6 col-lg-6 col-md-8 offset-xl-3 offset-md-4 offset-lg-4">
+                    <h1>Тест аяқталды</h1>
+                    <ul class="testEnd-result">
+                        <li>300 баллдың</li>
+                        <li class="green-colored">193 жинадыңыз</li>
+                    </ul>
+                    <div class="testEnd-item">
+                        <h4>Математика:</h4>
+                        <p>160<span>/220</span></p>
                     </div>
-                </div>
-                <div class="tab-pane fade show active" id="tab-registr">
-                    <div class="form-half">
-                        <label class="form-label">
-                            <span>Аты</span>
-                            <input type="text">
-                        </label>
-                        <label class="form-label">
-                            <span>Жөні</span>
-                            <input type="text">
-                        </label>
+                    <div class="testEnd-item">
+                        <h4>Қазақ тілі</h4>
+                        <p>30<span>/220</span></p>
                     </div>
-                    <label class="form-label">
-                        <span>E-mail</span>
-                        <input type="text">
-                    </label>
-                    <label class="form-label">
-                        <span>Телефон</span>
-                        <input type="text">
-                    </label>
-                    <label class="form-label field-password">
-                        <span>Құпия сөз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-hide">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <label class="form-label field-password">
-                        <span>Құпия сөзді қайталаңыз</span>
-                        <input type="password" class="password-input">
-                        <button class="btn-plain pass-show">
-                            <i class="icon i-pass-show"></i>
-                        </button>
-                    </label>
-                    <div class="student-type">
-                        <button class="btn-plain btn-student btn-student-active">
-                            <i class="icon check-white"></i>
-                            <span>Мен оқушымын</span>
-                            <input type="radio" name="student-type">
-                        </button>
-                        <button class="btn-plain btn-student">
-                            <i class="icon check-white"></i>
-                            <span>Мен оқушымын</span>
-                            <input type="radio" name="student-type">
-                        </button>
+                    <div class="testEnd-item">
+                        <h4>Қазақстан тарихы:</h4>
+                        <p>13<span>/220</span></p>
                     </div>
-                    <div class="btns-half">
-                        <a href="registr-last-step.html" class="btn-plain btn-blue-light">Kipy</a>
-                        <button class="btn-plain btn-blue-gradient">Тipкелy</button>
+                    <div class="btn-box tar">
+                        <a href="#" class="btn-blue-gradient">Қатемен жұмыс</a>
+                        <a href="#" class="btn-blue-light">Тест ережесі</a>
                     </div>
-                    <div class="registr-notice">
-                        <p>
-                            Тіркелу батырмасын басу арқылы сіз <a href="#">қолданушы келісімшартымен</a> келісесіз
-                        </p>
+                    <div class="testEnd-help">
+                        <p>Тестке қатысты туындаған сұрақтарды <a href="#">help@daryn.online</a> поштасына жібере аласыз</p>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-    <div class="bg-login">
-        <img src="img/main/bg-login.svg" alt="">
-    </div>
+
 </section>
 <div class="overlay"></div>
 <footer>
@@ -407,36 +342,6 @@
 </footer>
 <script src="js/libs.min.js"></script>
 <script src='js/jquery.easy-autocomplete.min.js'></script>
-<script type="text/javascript">
-    $('.form-label input').focus(function () {
-        $(this).closest('.form-label').addClass('form-label-focus');
-    });
-    $('.form-label input').blur(function() {
-        $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').addClass('form-label-done');
-        if( $(this).val().length === 0 ) {
-            $(this).closest('.form-label').removeClass('form-label-focus');
-            $(this).closest('.form-label').removeClass('form-label-done');
-        }
-    });
-
-    $('.pass-hide').click(function () {
-        $(this).toggleClass('pass-show');
-        var input = $($(this).closest('.form-label').find('.password-input'));
-        if (input.attr("type") == "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
-    })
-
-
-    $('.btn-student').click(function () {
-        $('.btn-student').removeClass('btn-student-active');
-        $(this).addClass('btn-student-active');
-
-    })
-</script>
 <script src="js/common.js"></script>
 </body>
 </html>

@@ -433,9 +433,8 @@
                 <div class="lesson-test whiteBlog">
                     <a href="test-detail.html">
                         <div class="test-item">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1111 14.65V17.1111H15.8822C16.5611 17.1111 17.1122 16.5611 17.1111 15.8811C17.1111 15.2011 16.56 14.65 15.88 14.65H13.1111ZM13.1111 14.65V12.1111H15.57C16.2711 12.1111 16.84 12.68 16.84 13.3811C16.84 14.0822 16.2711 14.6511 15.57 14.6511M9.88889 9.88889L7.38889 4.88889L4.88889 9.88889M5.33 9.00667H9.44778M17.8422 21H4.15778C2.41333 21 1 19.5867 1 17.8422V4.15778C1 2.41333 2.41333 1 4.15778 1H17.8422C19.5867 1 21 2.41333 21 4.15778V17.8422C21 19.5867 19.5867 21 17.8422 21Z"
-                                      stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6673 10.6678L11.8339 16.5012L8.33271 13M13 1C19.6268 1 25 6.37318 25 13C25 19.6268 19.6268 25 13 25C6.37318 25 1 19.6268 1 13C1 6.37318 6.37318 1 13 1Z" stroke="#06710A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div class="test-item-caption">
                                 <h2>1. Иррационал және нақты сан</h2>
@@ -677,7 +676,9 @@
             }
         });
     }
-
+    $('.page-up').click(function () {
+        $("html, body").animate({scrollTop: 0}, 800);
+    })
 </script>
 <script src="js/common.js"></script>
 </body>

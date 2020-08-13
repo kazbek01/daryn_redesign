@@ -865,9 +865,9 @@
             },
             blur: function (editor, event) {
                 var elText = $(".emojionearea")[0].emojioneArea.getText();
-                if(elText.length == 0){
-                    $('.leave-comment').removeClass('leave-comment-active');
-                }
+//                if(elText.length == 0){
+//                    $('.leave-comment').removeClass('leave-comment-active');
+//                }
             },
         }
     });
@@ -883,6 +883,10 @@
 
     $('.comment-reply').click(function () {
         $(this).closest('.comment').find('.leave-comment').toggleClass('leave-comment-show');
+    })
+
+    $('.page-up').click(function () {
+        $("html, body").animate({scrollTop: 0}, 800);
     })
 </script>
 <script src="js/common.js"></script>

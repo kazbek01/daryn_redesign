@@ -82,7 +82,7 @@ $(document).ready(function () {
 
     $('.btn-search').click(function (e) {
         e.preventDefault();
-        $(".searchCover").toggleClass('search-active');
+        $(".searchCover").addClass('search-active');
         if(screen.width < 767){
             $(".overlay").toggleClass('overlay-showed');
         }
