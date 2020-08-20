@@ -241,7 +241,7 @@
                     <div class="conference-base">
                         <h4>Сілтемені көшіріп, шақыру жіберіңіз:</h4>
                         <div class="conference-base-link">
-                            <input type="text" disabled placeholder="https://teacher.daryn.online/s10293">
+                            <input type="text"  disabled value="https://teacher.daryn.online/s10293">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 2.66667V1.83333C16 1.37333 15.6267 1 15.1667 1H14.3333M16 11V11.8333C16 12.2933 15.6267 12.6667 15.1667 12.6667H14.3333M4.33333 2.66667V1.83333C4.33333 1.37333 4.70667 1 5.16667 1H6M9.33333 1H11M16 7.66667V6M11 16H1.83333C1.37333 16 1 15.6267 1 15.1667V6C1 5.54 1.37333 5.16667 1.83333 5.16667H11C11.46 5.16667 11.8333 5.54 11.8333 6V15.1667C11.8333 15.6267 11.46 16 11 16Z" stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -253,7 +253,7 @@
     </div>
 </section>
 <div class="overlay"></div>
-<div class="onboarding onboarding-1 show-status">
+<div class="onboarding onboarding-1 show-onboarding">
     <div class="onboarding-caption">
         <svg width="12" height="61" viewBox="0 0 12 61" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.53033 0.46967C6.23744 0.176777 5.76256 0.176777 5.46967 0.46967L0.696699 5.24264C0.403806 5.53553 0.403806 6.01041 0.696699 6.3033C0.989593 6.59619 1.46447 6.59619 1.75736 6.3033L6 2.06066L10.2426 6.3033C10.5355 6.59619 11.0104 6.59619 11.3033 6.3033C11.5962 6.01041 11.5962 5.53553 11.3033 5.24264L6.53033 0.46967ZM6.75 61V1H5.25V61H6.75Z" fill="white"/>
@@ -286,38 +286,46 @@
         $(this).find('.span-checkbox').toggleClass('span-checkbox-active');
     })
 
-    $('.btn-power').click(function () {
+    if ($(window).width() > 768) {
+        $('.btn-power').click(function () {
 
-        if(!$('.onboarding').hasClass('show-status')){
-            $('.profile-status').toggleClass('show-status');
-        }else{
-            $('.onboarding-1').removeClass('show-status');
-            $('.onboarding-2').addClass('show-status');
+            if(!$('.onboarding').hasClass('show-onboarding')){
+                $('.profile-status').toggleClass('show-status');
+            }else{
+                $('.onboarding-1').removeClass('show-onboarding');
+                $('.onboarding-2').addClass('show-onboarding');
+                $('.conference-side').addClass('conference-side-onboard');
+                $('.conference-base').addClass('conference-base-onboard');
+            }
+        })
+
+        $('.onboarding-1').click(function () {
+            $(this).removeClass('show-onboarding');
+            $('.onboarding-2').addClass('show-onboarding');
             $('.conference-side').addClass('conference-side-onboard');
             $('.conference-base').addClass('conference-base-onboard');
-        }
-    })
+        })
 
-    $('.onboarding-1').click(function () {
-        $(this).removeClass('show-status');
-        $('.onboarding-2').addClass('show-status');
-        $('.conference-side').addClass('conference-side-onboard');
-        $('.conference-base').addClass('conference-base-onboard');
-    })
-
-    $('.close-onboard, .onboarding-2').click(function () {
-        $('.onboarding').removeClass('show-status');
-        $('.conference-side').removeClass('conference-side-onboard');
-        $('.conference-base').removeClass('conference-base-onboard');
-    })
-
-    $('.conference-side, .conference-base').click(function () {
-        if($('.onboarding').hasClass('show-status')){
-            $('.onboarding').removeClass('show-status');
+        $('.close-onboard, .onboarding-2').click(function () {
+            $('.onboarding').removeClass('show-onboarding');
             $('.conference-side').removeClass('conference-side-onboard');
             $('.conference-base').removeClass('conference-base-onboard');
-        }
-    })
+        })
+
+        $('.conference-side, .conference-base').click(function () {
+            if($('.onboarding').hasClass('show-onboarding')){
+                $('.onboarding').removeClass('show-onboarding');
+                $('.conference-side').removeClass('conference-side-onboard');
+                $('.conference-base').removeClass('conference-base-onboard');
+            }
+        })
+    }
+    else{
+        $('.btn-power').click(function () {
+            $('.profile-status').toggleClass('show-status');
+        })
+    }
+
 </script>
 <script src="js/common.js"></script>
 </body>

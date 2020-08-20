@@ -2933,6 +2933,12 @@ datalist option {
   height: 20px;
 }
 
+.i-flag-blue {
+  background: url("../img/icon/i-book-blue.svg") no-repeat center/contain;
+  width: 20px;
+  height: 20px;
+}
+
 .select-class {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03), 0px 1px 2px rgba(0, 0, 0, 0.03);
@@ -3195,7 +3201,7 @@ datalist option {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 30px;
+  margin-top: 20px;
   font-size: 18px;
   line-height: 100%;
   color: #848E9F;
@@ -3219,8 +3225,7 @@ datalist option {
 }
 
 .select-class-height {
-  padding: 30px 30px 70px 30px;
-  max-height: 430px;
+  padding: 30px;
   overflow-y: hidden;
   position: relative;
   -webkit-transition: max-height .4s ease;
@@ -3229,9 +3234,6 @@ datalist option {
 }
 
 .select-class-height .toggle-height {
-  position: absolute;
-  left: 0;
-  bottom: 5px;
   background: white;
   z-index: 1;
 }
@@ -3239,6 +3241,10 @@ datalist option {
 .select-class-expanded {
   max-height: 100%;
   height: auto;
+}
+
+.subject-slide {
+  display: none;
 }
 
 .toggle-height-active svg {
@@ -3327,6 +3333,7 @@ datalist option {
           flex-shrink: 0;
   -webkit-border-radius: 6px;
           border-radius: 6px;
+  overflow: hidden;
 }
 
 .lesson-item-img img {
@@ -3480,6 +3487,14 @@ datalist option {
 
 .info-list li i {
   margin-right: 10px;
+}
+
+.info-list li svg + span {
+  margin-left: 10px;
+}
+
+.info-list li span + svg {
+  margin-left: 10px;
 }
 
 .info-list li + li {
@@ -6514,6 +6529,10 @@ input:checked + .slider:before {
   stroke: #2D4EF5;
 }
 
+.profile-nav .span-new {
+  margin-left: 10px;
+}
+
 .profile-content {
   padding-top: 20px;
 }
@@ -8022,6 +8041,7 @@ input:checked + .slider:before {
 
 .section-404 {
   padding-top: 180px;
+  min-height: 80vh;
 }
 
 .wrapper-404 {
@@ -10471,12 +10491,16 @@ button.disabled {
   line-height: 18px;
   text-align: center;
   letter-spacing: -0.3px;
-  color: #C4C4C4;
+  color: #1D306D;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
+}
+
+.conference-base-link input:disabled {
+  color: #C4C4C4;
 }
 
 .conference-base-onboard {
@@ -10618,8 +10642,128 @@ button.disabled {
   top: 75%;
 }
 
-.show-status {
+.show-status, .show-onboarding {
   display: block;
+}
+
+.profileItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.profileItem-img {
+  width: 40px;
+  height: 40px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileItem-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileItem-caption {
+  padding-left: 15px;
+}
+
+.profileItem-caption h4 {
+  font-size: 18px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+  font-family: "SF Pro Display Medium";
+}
+
+.profileItem-caption p {
+  font-size: 14px;
+  line-height: 100%;
+  color: #C4C4C4;
+}
+
+.calling-modal {
+  background: rgba(45, 45, 45, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  overflow: hidden;
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  z-index: 1050;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+  -webkit-transform: translateX(150%);
+      -ms-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+.calling-modal-control .btn-plain {
+  width: 100%;
+  display: block;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "SF Pro Display";
+}
+
+.calling-modal-control .callGet {
+  color: #ADFFAB;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.calling-modal-control .callEnd {
+  color: #FF918B;
+}
+
+.calling-modal-show {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.span-new {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF3300;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 100%;
+  color: #FFFFFF;
+  font-family: "SF Pro Display Bold";
 }
 
 @media (max-width: 320px) {
@@ -12236,6 +12380,43 @@ button.disabled {
   .ubt-item p {
     margin-bottom: 10px;
   }
+  .show-onboarding {
+    display: none;
+  }
+  .conference-head {
+    padding: 15px;
+  }
+  .conference-head h1 {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  .conference-ava {
+    width: 50px;
+    height: 50px;
+  }
+  .conference-ava img {
+    width: 40px;
+    height: 40px;
+  }
+  .link-back-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .conference-content {
+    margin-top: 20px;
+  }
+  .profile-status {
+    min-height: 440px;
+  }
+  .search-teacher-body {
+    height: 440px;
+  }
+  .power-span {
+    top: 68%;
+  }
+  .conference-base {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12952,6 +13133,9 @@ button.disabled {
   .ubt-item {
     padding: 15px 20px;
   }
+  .show-onboarding {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -13122,6 +13306,13 @@ button.disabled {
   }
   .ubt-item {
     padding: 15px 20px;
+  }
+  .onboarding-2 .onboarding-caption p {
+    font-size: 22px;
+  }
+  .onboarding-1 .onboarding-caption {
+    top: 35%;
+    margin-left: -140px;
   }
 }
 
