@@ -524,11 +524,14 @@ header .container {
   position: relative;
   padding: 0;
   height: 70px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 .call-menu .icon-bar {
   background: #162F71;
-  width: 100%;
+  width: 28px;
   height: 2px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -11523,6 +11526,257 @@ article p + h5 {
   margin-bottom: 5px;
 }
 
+.faq-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+}
+
+.faq-head h1 {
+  font-size: 46px;
+  line-height: 120%;
+  color: #162F71;
+  font-family: "SF Pro Display Light";
+  max-width: 570px;
+}
+
+.faq-head h1 span {
+  font-family: "SF Pro Display Black";
+}
+
+.faq-search {
+  background: #FAFAFA;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.faq-search input {
+  font-size: 18px;
+  line-height: 100%;
+  color: #222;
+  margin: 0 0 0 22px;
+  padding: 0;
+  background: none;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.faq-search input::-webkit-input-placeholder {
+  color: #848E9F;
+}
+
+.faq-search input::-moz-placeholder {
+  color: #848E9F;
+}
+
+.faq-search input:-ms-input-placeholder {
+  color: #848E9F;
+}
+
+.faq-search input::-ms-input-placeholder {
+  color: #848E9F;
+}
+
+.faq-search input::placeholder {
+  color: #848E9F;
+}
+
+.faq-body {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding: 30px 70px;
+  margin-bottom: 50px;
+}
+
+.faq-body .pagination {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.faq-body .pagination li {
+  width: 50px;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 100%;
+  color: #848E9F;
+  font-family: "SF Pro Display Black";
+}
+
+.faq-body .pagination li span, .faq-body .pagination li a {
+  font-family: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.faq-body .pagination li + li {
+  margin-left: 10px;
+}
+
+.faq-body .pagination li a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: #848E9F;
+}
+
+.faq-body .pagination li a:hover, .faq-body .pagination li a:focus {
+  background: #E6F5FF;
+  color: #162F71;
+}
+
+.faq-body .pagination .active {
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5986FB), to(#2D4EF5));
+  background: -webkit-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
+  background: -o-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
+  background: linear-gradient(180deg, #5986FB 0%, #2D4EF5 100%);
+}
+
+.faqItem {
+  background: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.faqItem-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faqItem-head h2 {
+  font-size: 22px;
+  line-height: 120%;
+  color: #162F71;
+  font-family: "SF Pro Display";
+}
+
+.faqItem-body {
+  display: none;
+  padding-top: 15px;
+}
+
+.faqItem-body p {
+  font-size: 18px;
+  line-height: 120%;
+  color: #222222;
+}
+
+.faqItem-body p a {
+  color: #026FFF;
+}
+
+.faqItem:hover .faqItem-head h2 {
+  color: #026FFF;
+}
+
+.faqItem-active {
+  border: 1px solid #E5E5E5;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding: 20px 30px;
+  margin: -1px -30px 0 -30px;
+}
+
+.faqItem-active .plus-thin {
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.overlay-credit {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.overlay-credit h4 {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.overlay-credit .btn-grey {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding: 12px 28px;
+}
+
+.start-caption {
+  padding: 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.start-caption svg {
+  margin-bottom: 15px;
+}
+
+.start-caption p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #495366;
+}
+
 @media (max-width: 320px) {
   .select-class {
     padding: 20px;
@@ -11578,6 +11832,9 @@ article p + h5 {
   }
   .header-white .header-right .dropdown-language {
     position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   .basket {
     margin-right: 15px;
@@ -13345,6 +13602,64 @@ article p + h5 {
   .univerItem-caption h3 {
     font-size: 16px;
   }
+  .btn-blue-arrow {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .faq-head {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .faq-head h1 {
+    font-size: 26px;
+  }
+  .faq-head img {
+    display: none;
+  }
+  .faq-search {
+    padding: 10px;
+  }
+  .faq-search input {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .faq-body {
+    padding: 20px;
+  }
+  .faq-body .pagination li {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .faqItem {
+    padding: 15px 0;
+  }
+  .faqItem-head h2 {
+    font-size: 20px;
+  }
+  .faqItem-body p {
+    font-size: 16px;
+  }
+  .faqItem-active {
+    margin: -1px -15px 0 -15px;
+    padding: 15px;
+  }
+  .overlay-credit h4 {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .overlay-credit .btn-grey {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .start-caption {
+    padding: 15px;
+  }
+  .start-caption p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -14180,6 +14495,23 @@ article p + h5 {
   .univerItem-caption h3 {
     font-size: 16px;
   }
+  .faq-head h1 {
+    font-size: 30px;
+  }
+  .faq-head img {
+    max-width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faq-body {
+    padding: 20px 40px;
+  }
+  .start-caption {
+    padding: 15px;
+  }
+  .start-caption p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -14357,6 +14689,26 @@ article p + h5 {
   .onboarding-1 .onboarding-caption {
     top: 35%;
     margin-left: -140px;
+  }
+  .faq-head h1 {
+    font-size: 35px;
+  }
+  .faq-head img {
+    max-width: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faq-body {
+    padding: 20px 40px;
+  }
+  .start-base {
+    display: block;
+  }
+  .start-base .btn-box {
+    padding: 10px;
+  }
+  .start-base .btn-box a {
+    width: 49%;
   }
 }
 

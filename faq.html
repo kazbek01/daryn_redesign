@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Daryn.online</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body class="grey-bg">
+<header class="header-white">
+    <div class="container">
+        <div class="header">
+            <button class="btn-plain call-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="logo">
+                <img src="img/logo/logo.svg" alt="">
+                <span>Daryn.online</span>
+            </a>
+            <ul class="menu">
+                <li><a href="lessons.html">Сабақтар</a></li>
+                <li><a href="ubt.html">ҰБТ</a></li>
+                <li><a href="tests.html">Тест</a></li>
+                <li><a href="analyses.html">Анализ</a></li>
+                <li><a href="rate.html">Рейтинг</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="olympics.html">Олимпиадалар</a></li>
+                <li><a href="#" class="premium-link"> <i class="icon i-volt"></i> <span>Premium</span></a></li>
+            </ul>
+            <div class="header-right">
+                <form action="#">
+                    <div class="searchCover-box">
+                        <div class="searchCover">
+                            <button class="btn-plain btn-search">
+                                <img src="img/icon/search.svg" alt="">
+                            </button>
+                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз"
+                                   class="search-complete">
+                            <div class="search-control">
+                                <button class="btn-plain call-search">
+                                    <img src="img/icon/call-search.svg" alt="">
+                                </button>
+                                <button class="btn-plain clear-search">
+                                    <img src="img/icon/close-search.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn-plain basket">
+                    <img src="img/icon/bag.svg" alt="">
+                </button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button"
+                            id="dropdownProfile" data-toggle="dropdown">
+                        <div class="prof-item">
+                            <img src="img/main/avatar.png" alt="">
+                            <span>Профиль</span>
+                            <i class="icon i-down-grey"></i>
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                        <a class="dropdown-item" href="#">Шығу</a>
+                    </div>
+                </div>
+                <div class="dropdown-language">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownLang" data-toggle="dropdown">
+                            <span>KZ</span>
+                            <i class="icon i-down-grey"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownLang">
+                            <a class="dropdown-item" href="#">RU</a>
+                            <a class="dropdown-item" href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="nav-box">
+    <ul class="menu-nav">
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 22C3 18.93 5.48875 16.4412 8.55875 16.4412H14.9413C18.0113 16.4412 20.5 18.93 20.5 22M15.5065 3.556C17.5812 5.63066 17.5812 8.99435 15.5065 11.069C13.4318 13.1437 10.0682 13.1437 7.99349 11.069C5.91883 8.99435 5.91883 5.63066 7.99349 3.556C10.0682 1.48133 13.4318 1.48133 15.5065 3.556Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Менің кабинетім</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.3333 15.3333H22M15.3333 18.6667H22M15.3333 22H19.1444M22 10.8889V7.48889C22 6.26222 21.0056 5.26667 19.7778 5.26667H12.5878C12.22 5.26667 11.8756 5.08444 11.6689 4.78L10.1078 2.48556C9.90111 2.18222 9.55778 2 9.19 2H4.22222C2.99444 2 2 2.99444 2 4.22222V17.5556C2 18.7833 2.99444 19.7778 4.22222 19.7778H10.8889"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Сабақтар</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M14.1111 15.65V18.1111H16.8822C17.5611 18.1111 18.1122 17.5611 18.1111 16.8811C18.1111 16.2011 17.56 15.65 16.88 15.65H14.1111ZM14.1111 15.65V13.1111H16.57C17.2711 13.1111 17.84 13.68 17.84 14.3811C17.84 15.0822 17.2711 15.6511 16.57 15.6511M10.8889 10.8889L8.38889 5.88889L5.88889 10.8889M6.33 10.0067H10.4478M18.8422 22H5.15778C3.41333 22 2 20.5867 2 18.8422V5.15778C2 3.41333 3.41333 2 5.15778 2H18.8422C20.5867 2 22 3.41333 22 5.15778V18.8422C22 20.5867 20.5867 22 18.8422 22Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>ҰБТ</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.5556 15.3333V7.36444C18.5556 6.77556 18.3211 6.21 17.9044 5.79333L14.7622 2.65111C14.3456 2.23444 13.78 2 13.1911 2H5.22222C3.99444 2 3 2.99444 3 4.22222V19.7778C3 21.0056 3.99444 22 5.22222 22H11.8889M20.7778 18.6667L17.4444 22L15.2222 19.7778M6.33333 10.8889H13M6.33333 14.2222H13M6.33333 17.5556H11.1444M18.5556 7.55556H14.1111C13.4978 7.55556 13 7.05778 13 6.44444V2"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Тест</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.4735 13.0315V7.33614C18.4735 6.75036 18.2403 6.18779 17.8258 5.77332L14.7002 2.64768C14.2857 2.23321 13.7231 2 13.1373 2H5.2105C3.9892 2 3 2.9892 3 4.2105V19.684C3 20.9053 3.9892 21.8945 5.2105 21.8945H13.9066M18.4735 7.52624H14.0525C13.4424 7.52624 12.9472 7.03109 12.9472 6.42099V2M17.9828 16.6147L15.833 18.7644L14.5432 17.4746M11.0407 18.3732L11.7746 19.3336L11.9337 20.5284C12.0221 21.1915 12.5427 21.7132 13.2059 21.8016L14.404 21.9619L15.3633 22.6958C15.8938 23.1014 16.631 23.1014 17.1616 22.6958L18.122 21.9619L19.3168 21.8027C19.9799 21.7143 20.5016 21.1937 20.59 20.5306L20.7503 19.3325C20.7503 19.3336 21.1217 18.8473 21.4842 18.3732C21.8898 17.8426 21.8898 17.1054 21.4842 16.5749L20.7503 15.6145L20.5911 14.4197C20.5027 13.7565 19.9821 13.2349 19.319 13.1464L18.1209 12.9862L17.1616 12.2523C16.631 11.8467 15.8938 11.8467 15.3633 12.2523L14.4029 12.9862L13.2081 13.1453C12.5449 13.2337 12.0232 13.7543 11.9348 14.4175L11.7746 15.6156C11.7746 15.6145 11.4032 16.1008 11.0407 16.5749C10.6351 17.1054 10.6351 17.8415 11.0407 18.3732Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Олимпиада</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 7.83333H15.4286C14.7977 7.83333 14.2857 7.31067 14.2857 6.66667V2M4 13.6667V4.33333C4 3.04417 5.02286 2 6.28571 2H14.4823C15.088 2 15.6697 2.24617 16.0983 2.68367L19.3303 5.983C19.7589 6.4205 20 7.01433 20 7.63267V20.6667C20 21.9558 18.9771 23 17.7143 23H13.1429M5.84 21.1205C6.98857 22.293 8.848 22.293 9.99657 21.1205C11.144 19.9503 11.144 18.0498 9.99657 16.8773C8.848 15.7048 6.98857 15.7048 5.84 16.8773C4.69143 18.0498 4.69143 19.948 5.84 21.1205ZM5.84 21.1205L4 23M8.57143 11.3333H15.4286M13.1429 14.8333H15.4286"
+                          stroke="#848E9F" stroke-width="1.2857" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Байқау тесті</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.66667 15.3333L15.3333 8.66667M8.94333 8.66667C8.79 8.66667 8.66556 8.79111 8.66667 8.94444C8.66667 9.09778 8.79111 9.22222 8.94444 9.22222C9.09778 9.22222 9.22222 9.09778 9.22222 8.94444C9.22222 8.79111 9.09778 8.66667 8.94333 8.66667ZM15.0544 14.7778C14.9011 14.7778 14.7767 14.9022 14.7778 15.0556C14.7778 15.2089 14.9022 15.3333 15.0556 15.3333C15.2089 15.3333 15.3333 15.2089 15.3333 15.0556C15.3333 14.9022 15.2089 14.7778 15.0544 14.7778ZM12 22C6.47778 22 2 17.5233 2 12C2 6.47778 6.47778 2 12 2C17.5233 2 22 6.47778 22 12C22 17.5233 17.5233 22 12 22Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Daryn бонустары</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.2219 22H19.6664C20.8942 22 21.8886 21.0056 21.8886 19.7778V15.3333M17.1353 6.75333C17.2442 6.86222 17.2442 7.03778 17.1353 7.14667C17.0264 7.25556 16.8508 7.25556 16.7419 7.14667C16.6331 7.03778 16.6331 6.86222 16.7419 6.75333C16.8508 6.64556 17.0264 6.64556 17.1353 6.75333ZM14.6797 2H19.5519C20.8431 2 21.8886 3.04556 21.8886 4.33556V9.20778C21.8886 9.82778 21.6419 10.4211 21.2042 10.86L11.8597 20.2044C10.9475 21.1167 9.46861 21.1167 8.55639 20.2044L3.68417 15.3322C2.77194 14.42 2.77194 12.9411 3.68417 12.0289L13.0286 2.68444C13.4664 2.24667 14.0608 2 14.6797 2Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Бонустық бағдарлама</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.22227 13.6256V22L11.6667 19.7778L16.1112 22V13.6256M16.3807 3.95262C18.9842 6.55612 18.9842 10.7772 16.3807 13.3807C13.7772 15.9842 9.55611 15.9842 6.95262 13.3807C4.34913 10.7772 4.34913 6.55611 6.95262 3.95262C9.55612 1.34913 13.7772 1.34913 16.3807 3.95262Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Рейтинг</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 3.41989L11.029 2.25947C11.633 1.91351 12.368 1.91351 12.972 2.25947L15 3.41989M3 10.3855V8.06363C3 7.31507 3.394 6.62624 4.029 6.26277L6 5.1353M15 20.5801L12.971 21.7405C12.367 22.0865 11.632 22.0865 11.028 21.7405L9 20.5801M21 13.6145V15.9364C21 16.6839 20.606 17.3738 19.971 17.7362L18 18.8647M9.376 10.5029L12 12M12 12L14.624 10.5029M12 12V15.089M12 2.00206V4.79242M12 19.2076V21.9979M3.28 7.01647L5.62 8.34473M18.38 15.6553L20.72 16.9835M21 10.3855V8.06363C21 7.3161 20.606 6.62624 19.971 6.2638L18 5.1353M3 13.6145V15.9364C3 16.6839 3.394 17.3738 4.029 17.7362L6 18.8647M20.72 7.01647L18.38 8.34473M5.62 15.6553L3.28 16.9835"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Анализ</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.77778 18.7798H14.2222M17.5556 12.017H19.7778C21.0056 12.017 22 11.0082 22 9.76277V5.25426C22 4.00878 21.0056 3 19.7778 3H4.22222C2.99444 3 2 4.00878 2 5.25426V9.76277C2 11.0082 2.99444 12.017 4.22222 12.017H6.44444M17.5556 7.50851H6.44444V20.8729C6.44444 21.495 6.94222 22 7.55556 22H16.4444C17.0578 22 17.5556 21.495 17.5556 20.8729V7.50851ZM13.5713 11.5502C14.4392 12.4305 14.4392 13.8578 13.5713 14.7382C12.7035 15.6185 11.2965 15.6185 10.4286 14.7382C9.5608 13.8578 9.5608 12.4305 10.4286 11.5502C11.2965 10.6698 12.7035 10.6698 13.5713 11.5502Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Төлем жүйесі</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M2.04333 8.07714H19.7778C21.0056 8.07714 22 9.07158 22 10.2994V19.7778C22 21 21 22 19.7778 22H4.22222C2.99444 22 2 21.0056 2 19.7778V8.49491C2 7.57047 2.57222 6.74269 3.43778 6.41603L14.9411 2.07269C15.6678 1.79825 16.4444 2.33491 16.4444 3.11158V8.07603M16.4433 14.9771C16.2133 14.9782 16.0278 15.1649 16.0278 15.3949C16.0278 15.6249 16.2144 15.8116 16.4444 15.8105C16.6744 15.8105 16.8611 15.6238 16.8611 15.3938C16.8611 15.1638 16.6744 14.9771 16.4433 14.9771Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Кошелекті толтыру</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.16778 9.78222L12.0267 12.01M12.0267 12.01V7.55556M12.0267 12.01L8.17667 14.2333M12.0267 12.01V16.4444M12.0267 12.01L15.8467 9.80445M12.0267 12.01L15.8389 14.2111M18.6667 22H5.33333C3.49222 22 2 20.5078 2 18.6667V5.33333C2 3.49222 3.49222 2 5.33333 2H18.6667C20.5078 2 22 3.49222 22 5.33333V18.6667C22 20.5078 20.5078 22 18.6667 22Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Блог</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.6667 17.3425H19.7778C21.0056 17.3425 22 16.3616 22 15.1507V11.863C22 10.6521 21.0056 9.67123 19.7778 9.67123H18.6667C18.0533 9.67123 17.5556 10.1622 17.5556 10.7671V16.2466C17.5556 16.8515 18.0533 17.3425 18.6667 17.3425ZM18.6667 17.3425V18.4384C18.6667 19.6493 17.6722 20.6301 16.4444 20.6301H14.0833M19.2222 9.67123V9.12329C19.2222 5.18904 15.9889 2 12 2C8.01111 2 4.77778 5.18904 4.77778 9.12329V9.67123M14.0833 20.6301C14.0833 19.874 13.4611 19.2603 12.6944 19.2603H11.3056C10.5389 19.2603 9.91667 19.874 9.91667 20.6301C9.91667 21.3863 10.5389 22 11.3056 22H12.6944C13.4611 22 14.0833 21.3863 14.0833 20.6301ZM5.33333 17.3425H4.22222C2.99444 17.3425 2 16.3616 2 15.1507V11.863C2 10.6521 2.99444 9.67123 4.22222 9.67123H5.33333C5.94667 9.67123 6.44444 10.1622 6.44444 10.7671V16.2466C6.44444 16.8515 5.94667 17.3425 5.33333 17.3425Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Көмек</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10.667 21L12 19.667M12 19.667L10.667 18.334M12 19.667C6.477 19.667 2 17.926 2 15.778C2 15.138 2.408 14.538 3.111 14.006M20.889 14.006C21.592 14.538 22 15.138 22 15.778C22 17.414 19.4 18.811 15.722 19.386M9.6 3V5.16C9.6 5.557 9.869 5.88 10.2 5.88H13.8C14.131 5.88 14.4 5.557 14.4 5.16V3M6 15V5.4C6 4.074 7.074 3 8.4 3H15.6C16.926 3 18 4.074 18 5.4V15"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Байланыс</span>
+            </a>
+        </li>
+    </ul>
+    <div class="nav-info">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 12C16 14.209 14.209 16 12 16C9.791 16 8 14.209 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12ZM16 12V13.5C16 14.881 17.119 16 18.5 16C19.881 16 21 14.881 21 13.5V12C21 7.029 16.971 3 12 3C7.029 3 3 7.029 3 12C3 16.971 7.029 21 12 21C13.149 21 14.317 20.782 15.444 20.315C16.052 20.063 16.614 19.747 17.133 19.386"
+                      stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>info@daryn.online</span>
+        </a>
+        <a href="tel:+7 (707) 666 36 51">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18.965 16.61L17.792 15.437C17.206 14.851 16.256 14.851 15.671 15.437L14.749 16.359C14.543 16.565 14.231 16.634 13.965 16.517C12.629 15.932 11.309 15.045 10.132 13.868C8.96002 12.696 8.07602 11.382 7.49002 10.051C7.36802 9.77597 7.43902 9.45297 7.65202 9.23997L8.47802 8.41397C9.14902 7.74297 9.14902 6.79397 8.56302 6.20797L7.39002 5.03497C6.60902 4.25397 5.34302 4.25397 4.56202 5.03497L3.91002 5.68597C3.16902 6.42697 2.86002 7.49597 3.06002 8.55597C3.55402 11.169 5.07202 14.03 7.52102 16.479C9.97002 18.928 12.831 20.446 15.444 20.94C16.504 21.14 17.573 20.831 18.314 20.09L18.965 19.439C19.746 18.658 19.746 17.392 18.965 16.61V16.61Z"
+                      stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 6.99109C14.031 6.97709 15.067 7.35909 15.854 8.14609" stroke="#848E9F" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.682 5.31787C17.113 3.74887 15.056 2.96387 13 2.96387" stroke="#848E9F" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.009 11C17.023 9.969 16.641 8.933 15.854 8.146" stroke="#848E9F" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.682 5.31787C20.251 6.88687 21.036 8.94387 21.036 10.9999" stroke="#848E9F"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>+7 (707) 666 36 51</span>
+        </a>
+    </div>
+    <a href="https://bgpro.kz/" class="bg-logo" target="_blank">
+        <img src="img/logo/copyright.svg" alt="">
+    </a>
+</div>
+<section class="rating">
+    <div class="container">
+        <div class="faq-head">
+            <h1>
+                <span class="blue-colored">Daryn.Online</span>
+                платформасы бойынша сұрақтарыңызды іздеңіз
+            </h1>
+            <img src="img/main/faq-bg.svg" alt="">
+        </div>
+        <div class="faq-body">
+            <div class="faq-search">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L13.24 13.24M13.2443 3.1008C16.0454 5.90186 16.0454 10.4433 13.2443 13.2443C10.4433 16.0454 5.90186 16.0454 3.1008 13.2443C0.299734 10.4433 0.299734 5.90186 3.1008 3.1008C5.90186 0.299734 10.4433 0.299734 13.2443 3.1008Z"
+                          stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" placeholder="Сұрақтарыңыз бойынша іздеңіз">
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+            <div class="faqItem">
+                <div class="faqItem-head">
+                    <h2>Автокөлік құралдары</h2>
+                    <svg width="26" height="26" class="plus-thin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0V26M0 13H26" stroke="url(#paint0_linear)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="26"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#5986FB"/>
+                                <stop offset="1" stop-color="#2D4EF5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="faqItem-body">
+                    <p>
+                        Жеке профильңізде “<a href="#">Профильді өзгерту</a>” , батырмасына басып өзіңіз жайлы өзгертулер енгізе аласыз.
+                    </p>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">45</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="overlay"></div>
+<footer>
+    <div class="container">
+        <div class="footer">
+            <a href="index.html" class="footer-logo">
+                <img src="img/logo/logo.svg" alt="">
+            </a>
+            <div class="copyright">
+                <p>© Daryn.online by Bugin Holding, 2019-2020</p>
+                <a href="#" target="_blank">Жарнама</a>
+            </div>
+            <div class="phone">
+                <img src="img/icon/mobile.svg" alt="">
+                <div class="phone-caption">
+                    <a href="tel:+7 (707) 666 36 51">+7 (707) 666 36 51</a>
+                    <p>cұрақтар бойынша</p>
+                </div>
+                <a href="https://wa.me/7(707)666 36 51" class="wt-link">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.58609 13.4012C10.8304 15.6369 13.6732 17.0607 15.3647 15.3845L15.7747 14.9762C16.3218 14.4326 16.2453 13.532 15.6102 13.093C15.2105 12.8155 14.7811 12.5176 14.3059 12.1855C13.8148 11.8421 13.1409 11.8955 12.7149 12.3163L12.2512 12.7746C11.6767 12.4118 11.1079 11.9467 10.5803 11.4213L10.578 11.4191C10.0503 10.8937 9.58318 10.3273 9.21883 9.75533L9.67912 9.29362C10.1028 8.86945 10.1554 8.1985 9.81046 7.7095C9.47582 7.23642 9.17657 6.80884 8.89903 6.41081C8.45817 5.77967 7.55359 5.70347 7.00765 6.24706L6.59762 6.65531C4.91411 8.33951 6.34407 11.1689 8.58837 13.4046M18.0864 3.90669C16.2064 2.03372 13.7063 1.00114 11.0428 1C5.55257 1 1.08566 5.44533 1.08452 10.9096C1.08223 12.6484 1.54023 14.3576 2.41283 15.8644L1 21L6.27897 19.6217C7.73976 20.4132 9.37531 20.8283 11.0383 20.8283H11.0428C16.5308 20.8283 20.9977 16.3818 21 10.9176C21.0011 8.27014 19.9664 5.7808 18.0864 3.90669Z"
+                              stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="apps">
+                <p>
+                    Қосымшаны
+                    <svg width="15" height="6" viewBox="0 0 15 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.5" d="M0 3H14M14 3L12 1M14 3L12 5" stroke="#848E9F"/>
+                    </svg>
+                    жүктеп алыңыз
+                </p>
+                <a href="#" class="apps-link">
+                    <img src="img/icon/ios.svg" alt="">
+                </a>
+                <a href="#" class="apps-link">
+                    <img src="img/icon/android.svg" alt="">
+                </a>
+            </div>
+            <a href="https://bgpro.kz/" class="bg-logo" target="_blank">
+                <img src="img/logo/copyright.svg" alt="">
+            </a>
+        </div>
+        <div class="footer-md">
+            <div class="apps">
+                <p>
+                    Қосымшаны
+                    <svg width="15" height="6" viewBox="0 0 15 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.5" d="M0 3H14M14 3L12 1M14 3L12 5" stroke="#848E9F"/>
+                    </svg>
+                    жүктеп алыңыз
+                </p>
+                <a href="#" class="apps-link">
+                    <img src="img/icon/ios.svg" alt="">
+                </a>
+                <a href="#" class="apps-link">
+                    <img src="img/icon/android.svg" alt="">
+                </a>
+            </div>
+            <a href="https://bgpro.kz/" class="bg-logo" target="_blank">
+                <img src="img/logo/copyright.svg" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src='js/jquery.easy-autocomplete.min.js'></script>
+<script type="text/javascript">
+    $('.faqItem').on('click', function () {
+        if ($(this).hasClass('faqItem-active')) {
+            $(this).removeClass('faqItem-active')
+        }
+        else {
+            $('.faqItem').removeClass('faqItem-active');
+            $(this).addClass('faqItem-active');
+        }
+        var next = $(this).find('.faqItem-head').next();
+        $('.faqItem .faqItem-body').not(next).slideUp(400);
+        next.slideToggle(400);
+    });
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>
