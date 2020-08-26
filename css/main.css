@@ -991,7 +991,6 @@ header .container {
 }
 
 .subscribe {
-  max-width: 800px;
   margin: 0 auto;
   -webkit-border-radius: 6px;
           border-radius: 6px;
@@ -1069,7 +1068,7 @@ header .container {
           border-radius: 6px;
   margin: 0 15px;
   border: 3px solid #F5F5F5;
-  height: 330px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -2979,11 +2978,7 @@ datalist option {
 }
 
 .lessons-type li:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5986FB), to(#2D4EF5));
-  background: -webkit-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
-  background: -o-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
-  background: linear-gradient(180deg, #5986FB 0%, #2D4EF5 100%);
-  color: #FFFFFF;
+  color: #026FFF;
 }
 
 .lessons-type .active {
@@ -2996,6 +2991,10 @@ datalist option {
 
 .lessons-type .active span {
   font-family: "SF Pro Display Bold";
+}
+
+.lessons-type .active:hover {
+  color: white;
 }
 
 .i-bag-blue {
@@ -7140,12 +7139,7 @@ input:checked + .slider:before {
 .tablePayment tbody tr td em {
   font-style: normal;
   font-family: "SF Pro Display Bold";
-  background: -webkit-gradient(linear, left top, left bottom, from(#5986FB), to(#2D4EF5));
-  background: -webkit-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
-  background: -o-linear-gradient(top, #5986FB 0%, #2D4EF5 100%);
-  background: linear-gradient(180deg, #5986FB 0%, #2D4EF5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #026FFF;
 }
 
 .tablePayment tbody tr .th-operation {
@@ -13675,6 +13669,14 @@ article p + h5 {
   .start-caption p {
     font-size: 16px;
   }
+  .dropdown-profile .dropdown-menu {
+    left: -60px !important;
+    min-width: 200px;
+  }
+  .dropdown-profile .dropdown-item {
+    font-size: 16px;
+    padding: 3px 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -14733,7 +14735,7 @@ article p + h5 {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1700px) {
   .nav-box {
     width: 750px;
     max-width: 750px;
