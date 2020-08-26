@@ -10435,7 +10435,7 @@ button.disabled {
 .profile-status {
   display: none;
   position: relative;
-  min-height: 555px;
+  height: 555px;
   -webkit-border-radius: 6px 6px 0px 0px;
           border-radius: 6px 6px 0px 0px;
   overflow: hidden;
@@ -10571,7 +10571,7 @@ button.disabled {
           box-sizing: border-box;
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  padding: 15px;
+  padding: 8px 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10600,10 +10600,17 @@ button.disabled {
       -ms-flex: 1;
           flex: 1;
   text-align: left;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .conference-base-link input:disabled {
   color: #C4C4C4;
+}
+
+.conference-base-link .btn-blue-gradient {
+  padding: 10px 20px;
+  font-size: 18px;
 }
 
 .conference-base-onboard {
@@ -13425,7 +13432,7 @@ article p + h5 {
     margin-top: 20px;
   }
   .profile-status {
-    min-height: 440px;
+    height: 440px;
   }
   .search-teacher-body {
     height: 440px;
@@ -13435,6 +13442,14 @@ article p + h5 {
   }
   .conference-base {
     padding: 15px;
+  }
+  .conference-base-link {
+    display: block;
+  }
+  .conference-base-link .btn-blue-gradient {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
   }
   .ubtTest-head {
     padding: 20px;
