@@ -1496,13 +1496,12 @@ footer {
   position: fixed;
   top: 70px;
   left: 0;
-  max-width: 505px;
-  width: 505px;
+  width: 430px;
   background: #FFFFFF;
   height: -webkit-calc(100% - 70px);
   height: calc(100% - 70px);
   z-index: 99;
-  padding: 20px 30px 30px 160px;
+  padding: 20px 20px 30px 95px;
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
@@ -1527,8 +1526,8 @@ footer {
   height: calc(100% - 210px);
   overflow-y: scroll;
   overflow-x: hidden;
-  margin-right: -30px;
-  padding-right: 30px;
+  margin-right: -20px;
+  padding-right: 20px;
   position: relative;
 }
 
@@ -8125,13 +8124,12 @@ input:checked + .slider:before {
 
 .section-404 {
   padding-top: 180px;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .wrapper-404 {
   background: url("../img/main/bg-404.svg") no-repeat center/contain;
   min-height: 500px;
-  margin: 0 -20px;
   position: relative;
 }
 
@@ -10281,7 +10279,7 @@ input:checked + .slider:before {
 }
 
 .conference-side-body {
-  height: 540px;
+  height: 492px;
   overflow-y: scroll;
   padding-right: 15px;
 }
@@ -10321,10 +10319,6 @@ input:checked + .slider:before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -10365,6 +10359,12 @@ input:checked + .slider:before {
   line-height: 120%;
   color: #222222;
   font-family: "SF Pro Display Medium";
+}
+
+.conference-user-caption span {
+  color: #848E9F;
+  font-size: 14px;
+  line-height: 120%;
 }
 
 .conference-user input[type='checkbox'] {
@@ -14529,6 +14529,11 @@ article p + h5 {
   .start-caption p {
     font-size: 16px;
   }
+  .header-profile .header-right .dropdown-language {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -14579,7 +14584,7 @@ article p + h5 {
   }
   .nav-box {
     width: 400px;
-    padding: 20px 30px 30px 65px;
+    padding: 20px 30px 30px 20px;
   }
   .login {
     min-height: 100vh;
@@ -14735,10 +14740,15 @@ article p + h5 {
   }
 }
 
+@media (min-width: 1600px) {
+  .nav-box {
+    padding: 20px 20px 30px 45px;
+  }
+}
+
 @media (min-width: 1700px) {
   .nav-box {
-    width: 750px;
-    max-width: 750px;
-    padding: 20px 30px 30px 400px;
+    width: 700px;
+    padding: 20px 20px 30px 310px;
   }
 }
