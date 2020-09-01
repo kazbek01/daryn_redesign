@@ -847,6 +847,18 @@ header .container {
   margin-left: 15px;
 }
 
+.btn-blue-arrow span + svg {
+  margin-left: 15px;
+}
+
+.btn-blue-arrow img + span {
+  margin-left: 15px;
+}
+
+.btn-blue-arrow span + img {
+  margin-left: 15px;
+}
+
 .btn-blue-arrow span {
   line-height: 100%;
 }
@@ -2108,6 +2120,14 @@ footer {
 }
 
 .btn-blue-light span + svg {
+  margin-left: 15px;
+}
+
+.btn-blue-light img + span {
+  margin-left: 15px;
+}
+
+.btn-blue-light span + img {
   margin-left: 15px;
 }
 
@@ -5211,7 +5231,7 @@ input:checked + .slider:before {
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   height: 30px;
   width: 30px;
@@ -5810,6 +5830,14 @@ input:checked + .slider:before {
 }
 
 .btn-red-light svg + span {
+  margin-left: 15px;
+}
+
+.btn-red-light img + span {
+  margin-left: 15px;
+}
+
+.btn-red-light span + img {
   margin-left: 15px;
 }
 
