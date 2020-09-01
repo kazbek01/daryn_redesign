@@ -22,51 +22,6 @@ $(document).ready(function () {
         $('.modalBox').removeClass('showed');
     })
 
-    // var wow = new WOW({
-    //     animateClass: 'animated',
-    //     offset: 100
-    // });
-    // wow.init();
-
-
-    //Auto complete
-    var options = {
-        data: [{name: "Алгебра 8 сынып"},
-            {name: "Геометрия 8 сынып"},
-            {name: "Химия 8 сынып"}],
-
-
-        getValue: "name",
-
-        template: {
-            type: "custom",
-            method: function (value, item) {
-                return `
-                    <a href="">
-                        <div class="search-item">
-                            <div class="search-item-img">
-                                <img src="img/main/math.png" alt="">
-                            </div>
-                            <div class="search-item-caption">
-                                <h4>${value}</h4>
-                                <div class="rate-list">
-                                    <img src="img/icon/star-orange.svg" alt="">
-                                    <img src="img/icon/star-orange.svg" alt="">
-                                    <img src="img/icon/star-orange.svg" alt="">
-                                    <img src="img/icon/star-orange.svg" alt="">
-                                    <img src="img/icon/star-grey-br.svg" alt="">
-                                </div>
-                            </div>
-                            <span>таңдау</span>
-                        </div>
-                    </a>
-                 `;
-            }
-        }
-    };
-    //Auto complete
-
-    $(".search-complete").easyAutocomplete(options);
 
     $('.clear-search').click(function () {
         var $input = $(".search-complete").val();
