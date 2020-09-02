@@ -1926,6 +1926,58 @@ footer {
   z-index: 1;
 }
 
+.partner-cover {
+  padding-top: 20px;
+}
+
+.partner-cover h3 {
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "SF Pro Display Medium";
+  margin-bottom: 16px;
+  color: #848E9F;
+}
+
+.arrowDown {
+  display: inline-block;
+  position: relative;
+}
+
+.arrowDown:after {
+  position: absolute;
+  right: -25px;
+  top: 5px;
+  content: url("../img/icon/arrowDown.svg");
+}
+
+.modal-partner .btn-blue-gradient {
+  min-width: 200px;
+}
+
+.partner-list {
+  background: #F7F8F9;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding: 4px;
+}
+
+.call-partner {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 2px 4px rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 4px 0px 0px 4px;
+          border-radius: 4px 0px 0px 4px;
+  padding: 9px 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.call-partner img {
+  max-height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .login-tabs {
   border: none;
   margin-bottom: 35px;
@@ -2998,6 +3050,10 @@ datalist option {
 
 .lessons-type li:hover {
   color: #026FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 134, 251, 0.05)), to(rgba(45, 78, 245, 0.05)));
+  background: -webkit-linear-gradient(top, rgba(89, 134, 251, 0.05) 0%, rgba(45, 78, 245, 0.05) 100%);
+  background: -o-linear-gradient(top, rgba(89, 134, 251, 0.05) 0%, rgba(45, 78, 245, 0.05) 100%);
+  background: linear-gradient(180deg, rgba(89, 134, 251, 0.05) 0%, rgba(45, 78, 245, 0.05) 100%);
 }
 
 .lessons-type .active {
@@ -12029,6 +12085,57 @@ article p + h5 {
   display: inline-flex !important;
 }
 
+.filter-arrow {
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.btn-white {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 10px 20px rgba(0, 0, 0, 0.03);
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  line-height: 100%;
+  color: #162F71;
+}
+
+.btn-white span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+}
+
+.btn-white svg + span {
+  margin-left: 10px;
+}
+
+.btn-white span + svg {
+  margin-left: 10px;
+}
+
+.btn-white.active .filter-arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @media (max-width: 320px) {
   .select-class {
     padding: 20px;
@@ -13956,6 +14063,18 @@ article p + h5 {
     font-size: 16px;
     padding: 3px 10px;
   }
+  .side-toggle {
+    display: none;
+  }
+  .btn-white {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modalBox .btn-blue-gradient {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -14848,6 +14967,15 @@ article p + h5 {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
+  }
+  .side-toggle {
+    display: none;
+  }
+  .btn-white {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

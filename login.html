@@ -40,7 +40,8 @@
                             <button class="btn-plain btn-search">
                                 <img src="img/icon/search.svg" alt="">
                             </button>
-                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз" class="search-complete">
+                            <input type="text" placeholder="Табу керек нәрсені жазып, enter пернесін басыңыз"
+                                   class="search-complete">
                             <div class="search-control">
                                 <button class="btn-plain call-search">
                                     <img src="img/icon/call-search.svg" alt="">
@@ -275,7 +276,7 @@
 
             </ul>
             <div class="tab-content">
-                <div class="tab-pane fade" id="tab-login">
+                <div class="tab-pane fade show active" id="tab-login">
                     <label class="form-label">
                         <span>E-mail </span>
                         <input type="text">
@@ -293,8 +294,16 @@
                         <a href="#" class="btn-plain btn-blue-light">Тipкелy</a>
                         <button class="btn-plain btn-blue-gradient">Kipy</button>
                     </div>
+                    <div class="partner-cover">
+                        <h3 class="arrowDown">Біздің серіктестер арқылы кіріңіз</h3>
+                        <div class="partner-list">
+                            <button class="btn-plain call-partner">
+                                <img src="img/main/kundelik.png" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade show active" id="tab-registr">
+                <div class="tab-pane fade" id="tab-registr">
                     <div class="form-half">
                         <label class="form-label">
                             <span>Аты</span>
@@ -356,6 +365,27 @@
         <img src="img/main/bg-login.svg" alt="">
     </div>
 </section>
+<div class="modalBox modal-partner">
+    <div class="testModal">
+        <div class="modalBox-head">
+            <h2>Серіктестер арқылы кіру</h2>
+            <button class="btn-plain close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 19L19 1M1 1L19 19" stroke="#848E9F" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="testModal-body">
+            <p>Введите логин и пароль из kundelik.kz</p>
+            <form action="#">
+                <input type="text" placeholder="Логин" class="input-bordered">
+                <input type="text" placeholder="Пароль" class="input-bordered">
+                <button class="btn-plain btn-blue-gradient">Кіру</button>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="overlay"></div>
 <footer>
     <div class="container">
@@ -411,10 +441,10 @@
     $('.form-label input').focus(function () {
         $(this).closest('.form-label').addClass('form-label-focus');
     });
-    $('.form-label input').blur(function() {
+    $('.form-label input').blur(function () {
         $(this).closest('.form-label').removeClass('form-label-focus');
         $(this).closest('.form-label').addClass('form-label-done');
-        if( $(this).val().length === 0 ) {
+        if ($(this).val().length === 0) {
             $(this).closest('.form-label').removeClass('form-label-focus');
             $(this).closest('.form-label').removeClass('form-label-done');
         }
@@ -435,6 +465,11 @@
         $('.btn-student').removeClass('btn-student-active');
         $(this).addClass('btn-student-active');
 
+    })
+
+    $('.call-partner').click(function () {
+        $('.modalBox').addClass('showed');
+        $('.overlay').addClass('overlay-showed');
     })
 </script>
 <script src="js/common.js"></script>
