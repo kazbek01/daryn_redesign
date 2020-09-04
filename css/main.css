@@ -290,6 +290,9 @@ a span, button span {
 }
 
 header {
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1644,6 +1647,10 @@ footer {
   max-height: 22px;
 }
 
+.searchCover input {
+  display: none;
+}
+
 .searchCover .easy-autocomplete {
   display: none;
 }
@@ -1688,7 +1695,8 @@ footer {
   font-size: 16px;
   line-height: 120%;
   font-family: "SF Pro Display Light";
-  margin: 0;
+  margin: 0 0 0 14px;
+  display: block;
   border: none;
 }
 
@@ -12136,6 +12144,76 @@ article p + h5 {
           transform: rotate(180deg);
 }
 
+.adBlock {
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.adBlock img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.easy-autocomplete.eac-round input {
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 9;
+  background: white;
+  margin-top: 100px;
+}
+
+.banner-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 100px;
+}
+
+.banner-header .bannerImg-xs {
+  display: none;
+}
+
+.is-banner header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.is-banner .header-banner {
+  top: 0;
+}
+
+.bannerPlain {
+  margin-top: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.bannerPlain img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media (max-width: 320px) {
   .select-class {
     padding: 20px;
@@ -14075,6 +14153,15 @@ article p + h5 {
   .modalBox .btn-blue-gradient {
     width: 100%;
   }
+  .adBlock img {
+    width: 100%;
+  }
+  .banner-header img {
+    display: none;
+  }
+  .banner-header .bannerImg-xs {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -14976,6 +15063,9 @@ article p + h5 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+  .adBlock img {
+    width: 100%;
   }
 }
 
