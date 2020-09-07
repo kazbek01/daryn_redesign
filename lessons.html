@@ -261,16 +261,6 @@
                 </button>
                 <div class="side-sticky side-toggle">
                     <form action="#">
-                        <ul class="lessons-type">
-                            <li class="active">
-                                <span>Барлығы</span>
-                                <input type="radio" name="lesson-type">
-                            </li>
-                            <li>
-                                <span>Комбо</span>
-                                <input type="radio" name="lesson-type">
-                            </li>
-                        </ul>
                         <div class="select-class">
                             <div class="select-class-head">
                                 <h2>Сыныпты таңдаңыз</h2>
@@ -336,38 +326,25 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="select-class">
-                            <div class="select-class-head">
-                                <h2>Оқу тілін таңдаңыз</h2>
-                                <i class="icon i-flag-blue"></i>
-                            </div>
-                            <label class="radio-container">
-                                Барлығы
-                                <input type="radio" name="answer">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                Русский
-                                <input type="radio" name="answer">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">
-                                Қазақша
-                                <input type="radio" name="answer">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
                         <div class="select-class select-class-height">
                             <div class="select-class-head">
                                 <h2>Пәнді таңдаңыз</h2>
                                 <i class="icon i-book-blue"></i>
                             </div>
-                            <div class="search-plain">
-                                <button class="btn-plain">
-                                    <img src="img/icon/search-grey.svg" alt="">
-                                </button>
-                                <input type="text" placeholder="Пән бойынша іздеу">
-                            </div>
+                           <ul class="subject-lang">
+                               <li class="active">
+                                   Барлығы
+                                   <input type="radio">
+                               </li>
+                               <li>
+                                   Русский
+                                   <input type="radio">
+                               </li>
+                               <li>
+                                   Қазақша
+                                   <input type="radio">
+                               </li>
+                           </ul>
                             <ul class="subject-list">
                                 <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
@@ -1481,21 +1458,6 @@
     $('.subject-list li').click(function () {
         $(this).toggleClass('active');
     });
-
-//    $('.toggle-height').click(function (e) {
-//        e.preventDefault();
-//        $(this).toggleClass('toggle-height-active')
-//        $('.subject-slide').slideToggle(600);
-//        var span = $('.toggle-height span');
-//
-//        if (span.text() == "Көбірек көрсету") {
-//            span.text("Жасыру");
-//        }
-//        else {
-//            span.text("Көбірек көрсету");
-//        }
-//
-//    });
 
     $('.filter-toggle').click(function (e) {
         e.preventDefault();
