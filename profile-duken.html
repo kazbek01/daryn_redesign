@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -249,13 +248,21 @@
         <div class="container">
             <div class="avatar-back-caption">
                 <h1>Саги Кани <i class="icon bage-verify"></i></h1>
-                <a href="#" class="change-avatar">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 8.109C18.55 8.045 18.093 8 17.625 8C12.309 8 8 12.309 8 17.625C8 18.093 8.045 18.55 8.109 19M16 19H4C2.343 19 1 17.657 1 16V4C1 2.343 2.343 1 4 1H16C17.657 1 19 2.343 19 4V16C19 17.657 17.657 19 16 19ZM7.98744 5.51256C8.67086 6.19598 8.67086 7.30402 7.98744 7.98743C7.30402 8.67085 6.19598 8.67085 5.51257 7.98743C4.82915 7.30401 4.82915 6.19597 5.51257 5.51256C6.19599 4.82914 7.30403 4.82914 7.98744 5.51256Z"
-                              stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Фонды өзгерту <em>(50d.)</em></span>
-                </a>
+                <div class="btn-control">
+                    <div class="user-type">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 17H3C2.46957 17 1.96086 16.7893 1.58579 16.4142C1.21071 16.0391 1 15.5304 1 15V13C1 12.4696 1.21071 11.9609 1.58579 11.5858C1.96086 11.2107 2.46957 11 3 11H19M18 14H4M8.285 4C8.285 5.65685 6.94185 7 5.285 7C3.62815 7 2.285 5.65685 2.285 4M8.285 4C8.285 2.34315 6.94185 1 5.285 1C3.62815 1 2.285 2.34315 2.285 4M8.285 4C8.48461 3.73381 8.74346 3.51775 9.04105 3.36895C9.33863 3.22014 9.66678 3.14267 9.9995 3.14267C10.3322 3.14267 10.6604 3.22014 10.958 3.36895C11.2555 3.51775 11.5144 3.73381 11.714 4M2.285 4H1M17.715 4C17.715 5.65685 16.3719 7 14.715 7C13.0581 7 11.715 5.65685 11.715 4C11.715 2.34315 13.0581 1 14.715 1C16.3719 1 17.715 2.34315 17.715 4ZM17.715 4H19" stroke="#848E9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>Муғалім<span>11 сынып</span></p>
+                    </div>
+                    <a href="#" class="change-avatar">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 8.109C18.55 8.045 18.093 8 17.625 8C12.309 8 8 12.309 8 17.625C8 18.093 8.045 18.55 8.109 19M16 19H4C2.343 19 1 17.657 1 16V4C1 2.343 2.343 1 4 1H16C17.657 1 19 2.343 19 4V16C19 17.657 17.657 19 16 19ZM7.98744 5.51256C8.67086 6.19598 8.67086 7.30402 7.98744 7.98743C7.30402 8.67085 6.19598 8.67085 5.51257 7.98743C4.82915 7.30401 4.82915 6.19597 5.51257 5.51256C6.19599 4.82914 7.30403 4.82914 7.98744 5.51256Z"
+                                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Фонды өзгерту <em>(50d.)</em></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -326,7 +333,7 @@
             </div>
         </div>
     </div>
-    <div class="profile-content">
+    <div class="profile-content" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-5">
@@ -410,6 +417,20 @@
                                           stroke-linejoin="round"/>
                                 </svg>
                                 <span>Рефералды сілтеме</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0411 5.237C19.5328 6.52 20.6003 8.265 21 10.25M5.95888 18.763C4.4672 17.48 3.39968 15.735 3 13.75M14.9528 20.515C14.0249 20.825 13.0339 21 12 21C10.9661 21 9.97508 20.825 9.04724 20.515M14.9528 3.485C14.0249 3.175 13.0339 3 12 3C10.9661 3 9.97508 3.175 9.04724 3.485M18.0411 18.763C19.5328 17.48 20.6003 15.735 21 13.75M3 10.25C3.39866 8.265 4.46618 6.521 5.95888 5.237M9.9608 8L9.00238 10.5M14.0392 8L14.9976 10.5M8.50379 10.5H15.4962C16.1467 10.5 16.63 11.089 16.4924 11.712L15.7195 15.212C15.6175 15.672 15.2026 16 14.7233 16H9.27665C8.79642 16 8.38144 15.672 8.2805 15.212L7.50765 11.712C7.37 11.089 7.85431 10.5 8.50379 10.5Z" stroke="url(#paint0_linear)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="3" y1="3" x2="3" y2="21" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5986FB"/>
+                                            <stop offset="1" stop-color="#2D4EF5"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span>Дүкен</span>
                             </a>
                         </li>
                         <li>
@@ -529,94 +550,74 @@
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-7">
-                    <div class="profile-edit whiteBlog">
-                        <div class="profile-edit-head">
-                            <h1 class="subtitle-blue">Профильді өзгерту</h1>
+                    <div class="payment-history order-history whiteBlog">
+                        <div class="payment-history-head">
+                            <h2 class="subtitle-blue">История заказов</h2>
+                            <a href="delivery.html">Изменить адрес доставки</a>
                         </div>
-                        <div class="profile-edit-body">
-                            <div class="profile-edit-img">
-                                <img src="img/main/ava-md.png" alt="">
-                                <label class="edit-img">
-                                    <span>Фотосуретті өзгерту</span>
-                                    <input type="file">
-                                </label>
+                        <div class="payment-history-body">
+                            <div class="order-info">
+                                <div class="order-info-gallery">
+                                    <h2>№ KZ191001-979979</h2>
+                                    <div class="product-gallery">
+                                        <img src="img/main/prod-img.png" alt="">
+                                        <img src="img/main/prod-img1.png" alt="">
+                                        <img src="img/main/prod-img2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="order-info-caption">
+                                    <div class="order-info-head">
+                                        <p>3 280 ₸</p>
+                                        <p>20 августа</p>
+                                        <p class="blueLight-colored">Формирование</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button class="btn-plain btn-red-light">Отменить</button>
+                                        <a href="#" class="btn-plain btn-blue-light">Подробнее</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="profile-edit-caption">
-                                <div class="form-half">
-                                    <label class="form-label form-label-done">
-                                        <span>Аты</span>
-                                        <input type="text" value="AAAAAA">
-                                    </label>
-                                    <label class="form-label">
-                                        <span>Жөні</span>
-                                        <input type="text">
-                                    </label>
+                            <div class="order-info">
+                                <div class="order-info-gallery">
+                                    <h2>№ KZ191001-979979</h2>
+                                    <div class="product-gallery">
+                                        <img src="img/main/prod-img.png" alt="">
+                                        <img src="img/main/prod-img1.png" alt="">
+                                        <img src="img/main/prod-img2.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="form-half">
-                                    <label class="form-label select-label form-label-done">
-                                        <span>Оқушы</span>
-                                        <select name="#">
-                                            <option value="Оқушымын">Оқушымын</option>
-                                            <option value="Оқушымын">Оқушымын 1</option>
-                                            <option value="Оқушымын" selected>Оқушымын 2</option>
-                                        </select>
-                                        <i class="icon i-down-grey"></i>
-                                    </label>
-                                    <label class="form-label label-selectpicker">
-                                        <em class="form-title">Облыс</em>
-                                        <select class="selectpicker" data-live-search="true">
-                                            <option data-tokens="ketchup mustard">Алматы қаласы</option>
-                                            <option data-tokens="mustard">Астана қаласы</option>
-                                            <option data-tokens="frosting">Талдыкорган қаласы</option>
-                                        </select>
-                                        <i class="icon i-down-grey"></i>
-                                    </label>
+                                <div class="order-info-caption">
+                                    <div class="order-info-head">
+                                        <p>3 280 ₸</p>
+                                        <p>20 августа</p>
+                                        <p class="greenLight-colored">Доставлен</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#" class="btn-plain btn-blue-light">Подробнее</a>
+                                    </div>
                                 </div>
-                                <div class="form-half">
-                                    <label class="form-label label-selectpicker form-label-done">
-                                        <em class="form-title">Мектеп</em>
-                                        <div class="sdfsd">
-                                            <select class="selectpicker" data-live-search="true">
-                                                <option data-tokens="ketchup mustard">"№15 гимназия" коммуналд... "№15 гимназия" коммуналд... "№15 гимназия" коммуналд...</option>
-                                                <option data-tokens="mustard">"№15 гимназия" коммуналд... "№15 гимназия" коммуналд...</option>
-                                                <option data-tokens="frosting" selected>"№15 гимназия" 3 "№15 гимназия" коммуналд...</option>
-                                            </select>
-                                        </div>
-
-                                        <i class="icon i-down-grey"></i>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span>Сынып</span>
-                                        <select name="#">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                        <i class="icon i-down-grey"></i>
-                                    </label>
+                            </div>
+                            <div class="order-info">
+                                <div class="order-info-gallery">
+                                    <h2>№ KZ191001-979979</h2>
+                                    <div class="product-gallery">
+                                        <img src="img/main/prod-img.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="form-half">
-                                    <label class="form-label">
-                                        <span>E-mail</span>
-                                        <input type="text">
-                                    </label>
-                                    <label class="form-label">
-                                        <span>Телефон нөмер</span>
-                                        <input type="text" class="phone-mask">
-                                    </label>
-                                </div>
-                                <div class="btn-box tar">
-                                    <button class="btn-plain btn-blue-gradient">
-                                        <span>Сақтау</span>
-                                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 6L6 11L16 1" stroke="white" stroke-width="1.5"/>
-                                        </svg>
-                                    </button>
+                                <div class="order-info-caption">
+                                    <div class="order-info-head">
+                                        <p>3 280 ₸</p>
+                                        <p>20 августа</p>
+                                        <p class="greenLight-colored">Доставлен</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="#" class="btn-plain btn-blue-light">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -673,35 +674,6 @@
 </footer>
 <script src="js/libs.min.js"></script>
 <script src='js/jquery.easy-autocomplete.min.js'></script>
-<script src='js/jquery.inputmask.min.js'></script>
-<script src='js/bootstrap-select.min.js'></script>
-<script type="text/javascript">
-    $('.form-label input,.form-label select').focus(function () {
-        $(this).closest('.form-label').addClass('form-label-focus');
-    });
-    $('.form-label input').blur(function () {
-        $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').addClass('form-label-done');
-        if ($(this).val().length === 0) {
-            $(this).closest('.form-label').removeClass('form-label-focus');
-            $(this).closest('.form-label').removeClass('form-label-done');
-        }
-    });
-    $('.form-label select').blur(function () {
-        $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').addClass('form-label-done');
-        if ($(this).val().length === 0) {
-            $(this).closest('.form-label').removeClass('form-label-focus');
-            $(this).closest('.form-label').removeClass('form-label-done');
-        }
-    });
-    $('.label-selectpicker').click(function () {
-        $(this).addClass('form-label-done');
-    });
-
-    $('.selectpicker').selectpicker();
-    $('.phone-mask').inputmask({"mask": "+7(999) 999-99-99"});
-</script>
 <script src="js/common.js"></script>
 </body>
 </html>

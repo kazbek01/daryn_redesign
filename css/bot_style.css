@@ -245,6 +245,11 @@ section a:hover, section a:focus {
 }
 
 @font-face {
+  font-family: 'SF Pro Display Thin';
+  src: url("../fonts/SF PRO/SF-Pro-Display-Thin.otf");
+}
+
+@font-face {
   font-family: 'SF Pro Display Black';
   src: url("../fonts/SF PRO/SF-Pro-Display-Black.otf");
 }
